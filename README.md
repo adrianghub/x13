@@ -1,5 +1,7 @@
 # Assignment - X13
 
+jQuery | JS | SCSS | Bootstrap 4 | BEM
+
 ## KA:
 
 - Project all done with use of .scss and ready-to-use bootstrap components,
