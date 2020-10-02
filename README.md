@@ -23,3 +23,17 @@ __For the most part take advantage of boostrap components__
 - mantain scss code based on styleguide https://sass-guidelin.es/,
 - use as many as possible (and useful) __variables__,  
 - use __@extend__ and __@include__ if it is needed.
+
+## Setup & run project on you local machine
+
+- Install NPM dependencies ( clear install ):
+
+`npm ci`
+
+- Build project with command:
+
+`npm run build`
+
+- Run on localhost:
+
+`npm run watch`
