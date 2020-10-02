@@ -1,5 +1,5 @@
 /* By Athlon Front-End Team */
-
+@import "~bootstrap/scss/bootstrap";
 /* Core variables */
 @import 'base/vars';
 
@@ -19,31 +19,7 @@ body {
   font-family: 'Poppins', arial, serif;
 }
 
-header {
-  font-size: 2em;
-  margin: 20px;
-  color: $caption-color;
-  text-align: center;
-  background: $foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
-}
-
-main {
-  color: $foreground-color;
-  text-align: center;
-  padding: 10px;
-}
-
-a {
-  color: $link-color;
-}
-
-address {
-  color: $accent-color;
-}
-
-.logo {
-  margin: 0 auto;
-  display: block;
+.cla-bar {
+  color: $white;
+  background: $blue-gradient;
 }
