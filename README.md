@@ -4,14 +4,14 @@ jQuery | JS | SCSS | Bootstrap 4 | BEM
 
 ## KA:
 
-- Project all done with use of .scss and ready-to-use bootstrap components,
-- Use imported by .scss,
+- Create project using .scss and ready-to-use bootstrap components,
+- Use of imported by .scss,
 - Use !default flag for bootstrap variables in order to not override core .scss structure while modifying variables.
 
 ## TODO:
 
-Install bootstrap via npm with jQuery i
-Compile all setup files via webpack - ready to use boilerplate https://github.com/WeAreAthlon/frontend-webpack-boilerplate.
+- Install bootstrap via npm with jQuery,
+- Compile all setup files via webpack - ready to use boilerplate https://github.com/WeAreAthlon/frontend-webpack-boilerplate.
 
 __For the most part take advantage of boostrap components__
 
