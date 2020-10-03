@@ -30,6 +30,7 @@ body {
   font-size: 1.25rem;
   letter-spacing: .1rem;
   z-index: 1;
+  box-shadow: $suble-box-shadow;
 }
 
 .nav-item {
@@ -59,7 +60,6 @@ body {
         vertical-align: middle;
         margin-left: 5px;
         height: 1px;
-        z-index: 9;
         width: 30%;
       }
     }
@@ -76,4 +76,69 @@ body {
 .cla-bar {
   color: $white;
   background: $blue-gradient;
+  box-shadow: $suble-box-shadow;
+}
+
+/* About Section */
+
+.section-about {
+	padding-bottom: 120px;
+	background-color: $light-grey;
+  color: $grey;
+  text-align: center;
+}
+
+.about {
+
+  &__header {
+
+    &__heading--small {
+      font-size: 1.125rem;
+      color: $light-blue-font;
+      
+      &:after {
+        content: "";
+        background: $blue-gradient;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        height: 1px;
+        width: 30%;
+      }
+    }
+
+    &__heading--big {
+      font-size: 4.25rem;
+      font-weight: 600;
+    }
+  }
+
+  &__feature {
+    background-color: $white;
+    box-shadow: $suble-box-shadow;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 600;
+
+    &:after {
+      content:"";
+      background: $blue-gradient;
+      display: block;
+      height:2px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+  }
+
+    &--last {
+      background: $blue-gradient;
+      color: $white;
+    }
+
+    &__image {
+      width: 10vh!important;
+      margin: 0 auto 30px;
+    }
+  }
 }
