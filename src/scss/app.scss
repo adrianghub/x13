@@ -27,7 +27,7 @@ body {
 /* Navigation */
 .navbar {
   color: #5C666A;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: .1rem;
   z-index: 1;
   box-shadow: $suble-box-shadow;
@@ -44,8 +44,8 @@ body {
   &__caption {
     position: absolute;
     width: 25rem;
-    background-color: #fff;
-    color: #000;
+    background-color: $white;
+    color: $dark;
     padding: 1rem .5rem;
     bottom: 15%;
     left: 15%;
@@ -89,9 +89,15 @@ body {
         }
       }
       
-      &-work {
+      &-workflow {
         &:after {
           @include blue-gradient-line(10px, 55%);
+        }
+      }
+
+      &-offer {
+        &:after {
+          @include blue-gradient-line(10px, 35%);
         }
       }
     }
@@ -167,7 +173,7 @@ body {
 .btn-link {
   width: 100% !important;
   height: 60px !important;
-  color: #000 !important;
+  color: $dark !important;
   text-align: left !important;
   text-decoration: none !important;
 }
@@ -184,6 +190,71 @@ body {
   padding: 0 1.25rem!important; 
 }
 
-.work__image {
+.workflow__image {
   max-width: initial;
+}
+
+/* Offer Section */
+
+.section-offer {
+	background-color: $light-grey;
+  padding-bottom: 2rem;
+}
+
+.tab-content {
+  background-color: $white;
+  padding: 20px;
+}
+
+.tab-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  border: none;
+  color: $grey;
+  background-color: $light-grey;
+  font-size: 30px;
+
+  &:hover .nav-link {
+    box-shadow: $suble-box-shadow;
+    color: $dark!important;
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  font-weight: $semi-bold;
+  padding: 20px;
+
+  &-image {
+    margin-right: 20px;
+  }
+}
+
+.nav-link.active {
+  color: $dark;
+  background-color: $white;
+}
+
+
+.read-more {
+  background: $blue-gradient;
+  border: none;
+  color: $white;
+  padding: 10px 15px;
+  font-weight: $semi-bold;
+  max-width: 180px;
+  display: block;
+  text-align: center;  
+  margin: 20px auto;
+  border-radius: 25px;
+  box-shadow: $suble-box-shadow;
+}
+
+.read-more:hover {
+  color: darken($white, 5%);
+  text-decoration: none;
+  box-shadow: $hover-box-shadow;
 }
