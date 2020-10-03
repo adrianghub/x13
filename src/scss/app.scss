@@ -13,11 +13,65 @@
 
 /* Demo styles */
 
+html {
+  font-size: $default-font-size;
+}
+
 body {
   background: $body-background-color;
   color: $foreground-color;
   font-family: 'Poppins', arial, serif;
+  overflow-x: hidden;
 }
+
+/* Navigation */
+.navbar {
+  color: #5C666A;
+  font-size: 1.25rem;
+  letter-spacing: .1rem;
+  z-index: 1;
+}
+
+.nav-item {
+  padding: .5rem;
+}
+
+/* Header */
+.header {
+  position: relative;
+
+  &__caption {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem .5rem;
+    bottom: 15%;
+    left: 15%;
+
+    &__heading--small {
+      font-size: 1.125rem;
+      
+      &:after {
+        background: $blue-gradient;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        height: 1px;
+        z-index: 9;
+        width: 30%;
+      }
+    }
+
+    &__heading--big {
+      font-size: 4.25rem;
+    }
+  }
+}
+
+
+/* CLA Bar */
 
 .cla-bar {
   color: $white;
