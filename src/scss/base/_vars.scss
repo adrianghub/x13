@@ -4,6 +4,7 @@
 
 /* Typography */
 $default-font-size: 100%; /* 100% = 16px  */
+$semi-bold: 600;
 
 /* Breakpoints */
 /* Paths */
@@ -23,7 +24,7 @@ $blue-gradient: linear-gradient(90deg, rgba(29,98,240,1) 0%, rgba(26,214,253,1) 
 
 $dark-blue: #1D62F0;
 $light-blue: #1AD6FD;
-$light-blue-font: #1AD6FD;
+$light-blue-font: #1BAAF8;
 $grey: #5D676A;
 $light-grey: #F3F3F3;
 $dark-grey: #10242B;
@@ -33,3 +34,4 @@ $orange: #FF7200;
 /* Components */
 
 $suble-box-shadow: 0 .5rem .5rem rgba(0,0,0, 0.1);
+$accordin-box-shadow: 0 2px 20px 0 rgba(110, 130, 200, .18);
