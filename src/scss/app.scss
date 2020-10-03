@@ -27,7 +27,7 @@ body {
 /* Navigation */
 .navbar {
   color: $nav-link-grey;
-  background-color: $white;
+  background-color: $white!important;
   font-size: 1.125rem;
   letter-spacing: .1rem;
   z-index: 1;
