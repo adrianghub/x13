@@ -26,7 +26,8 @@ body {
 
 /* Navigation */
 .navbar {
-  color: #5C666A;
+  color: $nav-link-grey;
+  background-color: $white;
   font-size: 1.125rem;
   letter-spacing: .1rem;
   z-index: 1;
@@ -46,7 +47,7 @@ body {
     width: 25rem;
     background-color: $white;
     color: $dark;
-    padding: 1rem .5rem;
+    padding: 1rem .7rem;
     bottom: 15%;
     left: 15%;
 
@@ -61,6 +62,7 @@ body {
 
     &__heading--big {
       font-size: 4.25rem;
+      font-weight: $semi-bold;
     }
   }
 }
@@ -77,7 +79,7 @@ body {
 /* Section Header Styles */ 
 .section {
   &__header {
-    color: $grey;
+    color: $dark-grey;
 
     &__heading--small {
       font-size: 1.125rem;
