@@ -100,6 +100,12 @@ body {
           @include blue-gradient-line(10px, 35%);
         }
       }
+
+      &-brands {
+        &:after {
+          @include blue-gradient-line(10px, 25%);
+        }
+      }
     }
 
     &__heading--big {
@@ -198,7 +204,7 @@ body {
 
 .section-offer {
 	background-color: $light-grey;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .tab-content {
@@ -214,6 +220,7 @@ body {
   color: $grey;
   background-color: $light-grey;
   font-size: 30px;
+  position: relative;
 
   &:hover .nav-link {
     box-shadow: $suble-box-shadow;
@@ -236,8 +243,26 @@ body {
 .nav-link.active {
   color: $dark;
   background-color: $white;
+  border-bottom: 2px solid $light-blue;
+
+  .border-arrow {
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $light-blue;
+    border-bottom-color: $light-blue;
+  }
 }
 
+.border-arrow {
+  display: none;
+}
 
 .read-more {
   background: $blue-gradient;
