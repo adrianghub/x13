@@ -43,7 +43,7 @@ body {
 
   &__caption {
     position: absolute;
-    width: 400px;
+    width: 25rem;
     background-color: #fff;
     color: #000;
     padding: 1rem .5rem;
@@ -73,41 +73,51 @@ body {
   box-shadow: $suble-box-shadow;
 }
 
-/* About Section */
-
-.section-about {
-	padding-bottom: 120px;
-	background-color: $light-grey;
-  color: $grey;
-  text-align: center;
-}
-
-.about {
-
+/* Section Header Styles */ 
+.section {
   &__header {
+    color: $grey;
 
     &__heading--small {
       font-size: 1.125rem;
       color: $light-blue-font;
+
+      &-about {
+        &:after {
+          @include blue-gradient-line(10px, 30%);
+        }
+      }
       
-      &:after {
-        @include blue-gradient-line(10px, 30%);
+      &-work {
+        &:after {
+          @include blue-gradient-line(10px, 55%);
+        }
       }
     }
 
     &__heading--big {
       font-size: 4.25rem;
-      font-weight: 600;
+      font-weight: bolder;
     }
   }
+}
 
+
+/* About Section */
+
+.section-about {
+	background-color: $light-grey;
+  text-align: center;
+}
+
+.about {
   &__feature {
     background-color: $white;
     box-shadow: $suble-box-shadow;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     margin-bottom: 25px;
     position: relative;
-    font-weight: 600;
+    font-weight: bolder;
 
     &:after {
       @include blue-gradient-border;
