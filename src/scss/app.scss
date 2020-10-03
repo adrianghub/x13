@@ -54,13 +54,7 @@ body {
       font-size: 1.125rem;
       
       &:after {
-        background: $blue-gradient;
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 5px;
-        height: 1px;
-        width: 30%;
+        @include blue-gradient-line(5px, 30%);
       }
     }
 
@@ -97,13 +91,7 @@ body {
       color: $light-blue-font;
       
       &:after {
-        content: "";
-        background: $blue-gradient;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-        height: 1px;
-        width: 30%;
+        @include blue-gradient-line(10px, 30%);
       }
     }
 
@@ -122,13 +110,7 @@ body {
     font-weight: 600;
 
     &:after {
-      content:"";
-      background: $blue-gradient;
-      display: block;
-      height:2px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      @include blue-gradient-border;
   }
 
     &--last {

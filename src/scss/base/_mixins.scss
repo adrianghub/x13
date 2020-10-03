@@ -47,3 +47,23 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+@mixin blue-gradient-border {
+  background: $blue-gradient;
+  content:"";
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@mixin blue-gradient-line($margin-left, $width) {
+  background: $blue-gradient;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: $margin-left;
+  height: 1px;
+  width: $width;
+}
