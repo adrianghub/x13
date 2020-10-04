@@ -108,6 +108,18 @@ body {
           @include blue-gradient-line(10px, 25%);
         }
       }
+
+      &-counter {
+        &:after {
+          @include blue-gradient-line(10px, 35%);
+        }
+      }
+
+      &-testimonials {
+        &:after {
+          @include blue-gradient-line(10px, 15%);
+        }
+      }
     }
 
     &__heading--big {
@@ -331,3 +343,66 @@ body {
 }
 
 /*/ end count stats /*/
+
+/* Section Testimonials */
+
+.section-testimonials {
+  padding: 3rem;
+}
+
+.testimonials__card {
+  box-shadow: $suble-box-shadow;
+  padding: 20px;
+}
+
+.testimonials__card:hover {
+  box-shadow: $hover-box-shadow;
+}
+
+.testimonials__about {
+  text-align: right;
+
+  &--name {
+    font-weight: $semi-bold;
+  }
+
+  &--title {
+    color: $grey;
+  }
+}
+
+
+/* Section Footer */
+
+.section-footer {
+  background-color: $light-grey;
+  color: $grey;
+}
+
+.footer__about {
+  margin-top: 50px;
+}
+
+.footer__title {
+  color: $light-blue-font;
+  font-weight: $semi-bold;
+  font-size: 20px;
+  &:after {
+    @include blue-gradient-line(10px, 55%);
+  }
+}
+
+.footer__links__list {
+  margin-top: 20px;
+}
+
+.footer__contact__list {
+  margin-top: 20px;
+}
+
+.footer__about__description--bold {
+  color: $grey;
+  font-weight: $semi-bold;
+}
+
+/* Section Copyright */
