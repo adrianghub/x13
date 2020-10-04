@@ -289,3 +289,45 @@ body {
 .section-brands {
   padding-bottom: 2rem;
 }
+
+/* Section Counter */
+.section-counter {
+  background-color: $light-grey;
+  padding-bottom: 3rem;
+}
+
+/*/ start count stats /*/
+
+.counter {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.counter__stats {
+  text-align: center;
+  color: $light-blue-font;
+  font-size: 70px;
+  font-weight: bold;
+  position: relative;
+}
+
+.counter__blue-dot {
+  position: absolute;
+  top: -50px;
+  right: 40px;
+}
+
+.counter__caption {
+  font-size: 20px;
+  color: $grey;
+  font-weight: normal;
+}
+
+
+.counter__image {
+  margin: 0 auto;
+  max-width: 62px;
+}
+
+/*/ end count stats /*/
