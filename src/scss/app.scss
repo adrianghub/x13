@@ -506,6 +506,18 @@ body {
 
   &__links__list {
     margin-top: 20px;
+
+    &__link {
+      color: $grey;
+      margin-left: 10px;
+
+      
+    &:hover {
+      text-decoration: none;
+      color: $dark;
+    }
+    }
+    
   }
 
   &__contact__list {
