@@ -244,6 +244,35 @@ body {
   }
 }
 
+.basket {
+  &--bold {
+    font-weight: $semi-bold;
+  }
+
+  &__footer {
+    padding-bottom: 2.5rem;
+
+    &__caption {
+      position: relative;
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        min-width: 25%;
+        max-width: 300px;
+        height: 10px;
+        background: $orange-gradient;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 10px;
+      }
+    } 
+  }
+
+}
+
+
 /* Workflow Section */
 
 .workflow {
