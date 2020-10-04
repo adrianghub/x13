@@ -81,10 +81,35 @@ body {
 
 /* CLA Bar */
 
-.cla-bar {
+.cla {
+  min-height: 120px;
   color: $white;
   background: $blue-gradient;
   box-shadow: $suble-box-shadow;
+
+  &__button {
+    color: $white;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: $grey;
+      text-decoration: none;
+      box-shadow: $suble-box-shadow;
+    }
+
+    &--phone {
+      background: $orange-gradient;
+    }
+    &--mail {
+      color: $grey;
+      background-color: $white;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
 }
 
 /* Section Header Styles */ 
