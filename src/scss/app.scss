@@ -234,7 +234,7 @@ body {
       text-align: left !important;
       text-decoration: none !important;
       font-weight: $semi-bold;
-      
+
       &--number {
         font-weight: bold;
         color: $light-blue-font;
@@ -252,76 +252,83 @@ body {
   padding-bottom: 3rem;
 }
 
-.tab-content {
-  background-color: $white;
-  padding: 1.25rem;
-}
-
-.tab-item {
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-  border: none;
-  color: $grey;
-  background-color: $light-grey;
-  font-size: 30px;
-  position: relative;
-
-  &:hover .nav-link {
-    box-shadow: $suble-box-shadow;
-    color: $dark!important;
-  }
-}
-
-.tab-item > .nav-link {
-  display: flex;
-  align-items: center;
-  color: $grey;
-  font-weight: $semi-bold;
-  padding: 20px;
-
-  &-image {
-    margin-right: 20px;
-  }
-}
-
-.tab-item > .nav-link.active {
-  color: $dark;
-  background-color: $white;
-  border-bottom: 2px solid $light-blue;
-
-  .border-arrow {
-    display: inline-block;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -10px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid $light-blue;
-    border-bottom-color: $light-blue;
-  }
-}
-
-.border-arrow {
+.borderArrow {
   display: none;
 }
 
-.read-more {
-  @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
+.offer {
+  &__list {
+    &__item {
+      flex-basis: 0;
+      flex-grow: 1;
+      text-align: center;
+      border: none;
+      color: $grey;
+      background-color: $light-grey;
+      font-size: 30px;
+      position: relative;
+    
+      &:hover .nav-link {
+        box-shadow: $suble-box-shadow;
+        color: $dark!important;
+      }
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $grey;
+      font-weight: $semi-bold;
+      padding: 20px;
+
+      &.active {
+        color: $dark;
+        background-color: $white;
+        border-bottom: 2px solid $light-blue;
+
+        .borderArrow {
+          display: inline-block;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          margin-left: -10px;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid $light-blue;
+          border-bottom-color: $light-blue;
+        }
+      }
+    
+      &-image {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__content {
+    background-color: $white;
+    padding: 1.25rem;
+
+    &__button {
+      @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
+
+      &:hover {
+        color: darken($white, 5%);
+        text-decoration: none;
+        box-shadow: $hover-box-shadow;
+      }
+    }
+  }
 }
 
-.read-more:hover {
-  color: darken($white, 5%);
-  text-decoration: none;
-  box-shadow: $hover-box-shadow;
-}
+/* Section Brands */
 
 .section-brands {
   padding-bottom: 2rem;
 }
+
+/* End Section Brands */
+
 
 /* Section Counter */
 .section-counter {
@@ -334,33 +341,32 @@ body {
 .counter {
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
-}
+  margin-top: 50px;
+  
+  &__stats {
+    text-align: center;
+    color: $light-blue-font;
+    font-size: 70px;
+    font-weight: bold;
+    position: relative;
+  }
 
-.counter__stats {
-  text-align: center;
-  color: $light-blue-font;
-  font-size: 70px;
-  font-weight: bold;
-  position: relative;
-}
+  &__blue-dot {
+    position: absolute;
+    top: -50px;
+    right: 40px;
+  }
 
-.counter__blue-dot {
-  position: absolute;
-  top: -50px;
-  right: 40px;
-}
+  &__caption {
+    font-size: 20px;
+    color: $grey;
+    font-weight: normal;
+  }
 
-.counter__caption {
-  font-size: 20px;
-  color: $grey;
-  font-weight: normal;
-}
-
-
-.counter__image {
-  margin: 0 auto;
-  max-width: 62px;
+  &__image {
+    margin: 0 auto;
+    max-width: 62px;
+  }
 }
 
 /*/ end count stats /*/
@@ -400,30 +406,32 @@ body {
   color: $grey;
 }
 
-.footer__about {
-  margin-top: 50px;
-}
+.footer {
+  &__about {
+    margin-top: 50px;
 
-.footer__title {
-  color: $light-blue-font;
-  font-weight: $semi-bold;
-  font-size: 20px;
-  &:after {
-    @include blue-gradient-line(10px, 55%);
+    &__description--bold {
+      color: $grey;
+      font-weight: $semi-bold;
+    }
   }
-}
 
-.footer__links__list {
-  margin-top: 20px;
-}
+  &__title {
+    color: $light-blue-font;
+    font-weight: $semi-bold;
+    font-size: 20px;
+    &:after {
+      @include blue-gradient-line(10px, 55%);
+    }
+  }
 
-.footer__contact__list {
-  margin-top: 20px;
-}
+  &__links__list {
+    margin-top: 20px;
+  }
 
-.footer__about__description--bold {
-  color: $grey;
-  font-weight: $semi-bold;
+  &__contact__list {
+    margin-top: 20px;
+  }
 }
 
 /* Section Copyright */
