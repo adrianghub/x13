@@ -265,7 +265,7 @@ body {
       border: none;
       color: $grey;
       background-color: $light-grey;
-      font-size: 30px;
+      font-size: 2rem;
       position: relative;
     
       &:hover .nav-link {
@@ -278,7 +278,12 @@ body {
       align-items: center;
       color: $grey;
       font-weight: $semi-bold;
-      padding: 20px;
+      padding: 1.25rem;
+
+      
+      &__image {
+        margin-right: 1.25rem;
+      }
 
       &.active {
         color: $dark;
@@ -298,10 +303,6 @@ body {
           border-top: 10px solid $light-blue;
           border-bottom-color: $light-blue;
         }
-      }
-    
-      &-image {
-        margin-right: 20px;
       }
     }
   }
