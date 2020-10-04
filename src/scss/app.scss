@@ -30,12 +30,23 @@ body {
   background-color: $white!important;
   font-size: 1.125rem;
   letter-spacing: .1rem;
-  z-index: 1;
+  min-height: 120px;
   box-shadow: $suble-box-shadow;
-}
 
-.nav-item {
-  padding: .5rem;
+  &__nav {
+    &__item {
+      padding: .5rem;
+    }
+    &__link {
+      transition: all .1s ease-out;
+      &:hover {
+        @include blue-gradient-button(inline-block, 0, 10px 15px, 100%);
+      }
+    }
+    &__link.active {
+      font-weight: $semi-bold;
+    }
+  }
 }
 
 /* Header */
@@ -242,7 +253,7 @@ body {
   }
 }
 
-.nav-link {
+.tab-item > .nav-link {
   display: flex;
   align-items: center;
   color: $grey;
@@ -254,7 +265,7 @@ body {
   }
 }
 
-.nav-link.active {
+.tab-item > .nav-link.active {
   color: $dark;
   background-color: $white;
   border-bottom: 2px solid $light-blue;
@@ -279,17 +290,7 @@ body {
 }
 
 .read-more {
-  background: $blue-gradient;
-  border: none;
-  color: $white;
-  padding: 10px 15px;
-  font-weight: $semi-bold;
-  max-width: 180px;
-  display: block;
-  text-align: center;  
-  margin: 20px auto;
-  border-radius: 25px;
-  box-shadow: $suble-box-shadow;
+  @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
 }
 
 .read-more:hover {
