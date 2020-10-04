@@ -26,7 +26,6 @@ body {
 
 /* Navigation */
 .navbar {
-  color: $nav-link-grey;
   background-color: $white!important;
   font-size: 1.125rem;
   letter-spacing: .1rem;
@@ -38,13 +37,61 @@ body {
       padding: .5rem;
     }
     &__link {
+      color: $nav-link-grey;
       transition: all .1s ease-out;
       &:hover {
         @include blue-gradient-button(inline-block, 0, 10px 15px, 100%);
       }
+
+      &--login {
+        position: relative;
+        color: $nav-link-grey;
+        text-decoration: none;
+        transition: all .1s ease-out;
+      }
+
+      &--login:hover {
+        background-color: $light-grey;
+      }
     }
     &__link.active {
       font-weight: $semi-bold;
+    }
+  }
+}
+
+.login__form {
+  position: absolute;
+  top: 90px;
+  right: 160px;
+  background-color: $light-grey;
+
+  &__content {
+    width: 120%;
+    padding: 20px;
+    background-color: $light-grey;
+    border: none;
+    border-radius: 0;
+
+    &__label {
+      color: $dark;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  &__button {
+    @include blue-gradient-button(block, 50px 0 0, 10px 40px, 100%);
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: $hover-box-shadow;
+      cursor: pointer;
     }
   }
 }
@@ -378,24 +425,26 @@ body {
   padding: 3rem;
 }
 
-.testimonials__card {
-  box-shadow: $suble-box-shadow;
-  padding: 20px;
-}
-
-.testimonials__card:hover {
-  box-shadow: $hover-box-shadow;
-}
-
-.testimonials__about {
-  text-align: right;
-
-  &--name {
-    font-weight: $semi-bold;
+.testimonials {
+  &__card {
+    box-shadow: $suble-box-shadow;
+    padding: 20px; 
+    
+    &:hover {
+      box-shadow: $hover-box-shadow;
+    }
   }
 
-  &--title {
-    color: $grey;
+  &__about {
+    text-align: right;
+  
+    &--name {
+      font-weight: $semi-bold;
+    }
+  
+    &--title {
+      color: $grey;
+    }
   }
 }
 
@@ -436,4 +485,7 @@ body {
 }
 
 /* Section Copyright */
+.copyright {
+  color: $grey;
+}
 /* End Section Copyright */
