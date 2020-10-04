@@ -78,40 +78,6 @@ body {
   }
 }
 
-
-/* CLA Bar */
-
-.cla {
-  min-height: 120px;
-  color: $white;
-  background: $blue-gradient;
-  box-shadow: $suble-box-shadow;
-
-  &__button {
-    color: $white;
-    padding: 10px 20px;
-    cursor: pointer;
-
-    &:hover {
-      color: $grey;
-      text-decoration: none;
-      box-shadow: $suble-box-shadow;
-    }
-
-    &--phone {
-      background: $orange-gradient;
-    }
-    &--mail {
-      color: $grey;
-      background-color: $white;
-
-      &:hover {
-        color: $dark;
-      }
-    }
-  }
-}
-
 /* Section Header Styles */ 
 .section {
   &__header {
@@ -165,6 +131,38 @@ body {
   }
 }
 
+/* CLA Bar */
+
+.cla {
+  min-height: 120px;
+  color: $white;
+  background: $blue-gradient;
+  box-shadow: $suble-box-shadow;
+
+  &__button {
+    color: $white;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: $grey;
+      text-decoration: none;
+      box-shadow: $suble-box-shadow;
+    }
+
+    &--phone {
+      background: $orange-gradient;
+    }
+    &--mail {
+      color: $grey;
+      background-color: $white;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
 
 /* About Section */
 
@@ -179,7 +177,7 @@ body {
     background-color: $white;
     box-shadow: $suble-box-shadow;
     padding: 1.25rem 0;
-    margin-bottom: 25px;
+    margin-bottom: 1.6rem;
     position: relative;
     font-weight: $semi-bold;
 
@@ -194,61 +192,58 @@ body {
 
     &__image {
       width: 10vh!important;
-      margin: 0 auto 30px;
+      margin: 0 auto 2rem;
     }
   }
 }
 
 /* Workflow Section */
 
-.workflow__button {
-  font-weight: $semi-bold;
+.workflow {
+  &__image {
+    max-width: initial;
+  }
 
-  &--number {
-    font-weight: bold;
-    color: $light-blue-font;
-    margin: 0 10px;
+  &__card, &__card__header {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 1.25rem;
+  }
+
+  &__card {
+    box-shadow: $accordin-box-shadow;
+
+    &__body {
+      padding: 1.25rem 0 1.25rem!important;
+
+      &:after {
+        @include blue-gradient-border;
+      }
+
+      &__description {
+        padding: 0 1.25rem!important;
+      }
+    }
+
+    &__button {
+      outline: none!important;
+      width: 100% !important;
+      height: 3.75rem !important;
+      color: $dark !important;
+      text-align: left !important;
+      text-decoration: none !important;
+      font-weight: $semi-bold;
+      
+      &--number {
+        font-weight: bold;
+        color: $light-blue-font;
+        margin: 0 0.625rem;
+      }
+    }
   }
 }
 
-.card, .card-header {
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  margin-bottom: 20px;
-}
-
-.card {
-  box-shadow: $accordin-box-shadow;
-}
-
-.btn {
-  outline: none!important;
-}
-
-.btn-link {
-  width: 100% !important;
-  height: 60px !important;
-  color: $dark !important;
-  text-align: left !important;
-  text-decoration: none !important;
-}
-
-.card-body {
-  padding: 1.25rem 0 1.25rem!important;
-
-  &:after {
-    @include blue-gradient-border;
-  }
-}
-
-.card-description {
-  padding: 0 1.25rem!important; 
-}
-
-.workflow__image {
-  max-width: initial;
-}
 
 /* Offer Section */
 
@@ -259,7 +254,7 @@ body {
 
 .tab-content {
   background-color: $white;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .tab-item {
@@ -432,3 +427,4 @@ body {
 }
 
 /* Section Copyright */
+/* End Section Copyright */
