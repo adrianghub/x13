@@ -35,24 +35,36 @@ body {
 
   &__nav {
     &__item {
-      padding: .5rem;
-    }
-    &__link {
-      color: $nav-link-grey;
+      margin: 0 1rem;
       transition: all .1s ease-out;
+
       &:hover {
-        @include blue-gradient-button(inline-block, 0, 10px 15px, 100%);
+        @include blue-gradient-button(inline-block, 0, 0 20px, 100%);
       }
 
       &--login {
         position: relative;
-        color: $nav-link-grey;
         text-decoration: none;
         transition: all .1s ease-out;
       }
 
       &--login:hover {
         background-color: $light-grey;
+      }
+    }
+
+    &__link {
+      color: $nav-link-grey;
+      
+      &:hover {
+        color: $white!important
+      }
+
+      &--login {
+        color: $nav-link-grey;
+        &:hover {
+          color: $nav-link-grey;
+        }
       }
     }
     &__link.active {
@@ -521,7 +533,7 @@ body {
     color: $light-blue-font;
     font-weight: $semi-bold;
     font-size: 20px;
-    
+
     &:after {
       @include blue-gradient-line(10px, 55%);
     }
@@ -545,6 +557,21 @@ body {
 
   &__contact__list {
     margin-top: 20px;
+
+    &__link {
+      color: $grey;
+      font-weight: $semi-bold;
+      margin-left: 10px;
+
+    &:hover {
+      text-decoration: none;
+      color: $dark;
+    }
+
+    &--email {
+      font-weight: normal;
+    }
+    }
   }
 }
 /* End Section Footer */
