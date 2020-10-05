@@ -293,7 +293,9 @@ body {
       }
 
       &__top {
+        margin-top: 2rem;
         color: $grey;
+        
         &--price {
           text-decoration: line-through;
         }
