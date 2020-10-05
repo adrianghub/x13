@@ -24,6 +24,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Navigation */
 .navbar {
   background-color: $white!important;
@@ -96,6 +97,9 @@ body {
   }
 }
 
+/* End Navigation */
+
+
 /* Header */
 .header {
   position: relative;
@@ -124,6 +128,9 @@ body {
     }
   }
 }
+
+/* End Header */
+
 
 /* Section Header Styles */ 
 .section {
@@ -178,6 +185,9 @@ body {
   }
 }
 
+/* End Section Header Styles */ 
+
+
 /* CLA Bar */
 
 .cla {
@@ -211,7 +221,10 @@ body {
   }
 }
 
-/* About Section */
+/* End CLA Bar */
+
+
+/* Section About */
 
 .section-about {
 	background-color: $light-grey;
@@ -269,11 +282,13 @@ body {
       }
     } 
   }
-
 }
 
+/* End Section About */
 
-/* Workflow Section */
+
+
+/* Section Workflow */
 
 .workflow {
   &__image {
@@ -320,8 +335,10 @@ body {
   }
 }
 
+/* End Section Workflow */
 
-/* Offer Section */
+
+/* Section Offer */
 
 .section-offer {
 	background-color: $light-grey;
@@ -398,6 +415,9 @@ body {
   }
 }
 
+/* End Section Offer */
+
+
 /* Section Brands */
 
 .section-brands {
@@ -412,8 +432,6 @@ body {
   background-color: $light-grey;
   padding-bottom: 3rem;
 }
-
-/*/ start count stats /*/
 
 .counter {
 	display: flex;
@@ -446,7 +464,8 @@ body {
   }
 }
 
-/*/ end count stats /*/
+/* End Section Counter */
+
 
 /* Section Testimonials */
 
@@ -477,6 +496,9 @@ body {
   }
 }
 
+/* End Section Testimonials */
+
+
 
 /* Section Footer */
 
@@ -499,6 +521,7 @@ body {
     color: $light-blue-font;
     font-weight: $semi-bold;
     font-size: 20px;
+    
     &:after {
       @include blue-gradient-line(10px, 55%);
     }
@@ -524,6 +547,8 @@ body {
     margin-top: 20px;
   }
 }
+/* End Section Footer */
+
 
 /* Section Copyright */
 .copyright {
