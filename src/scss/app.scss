@@ -30,7 +30,7 @@ body {
   background-color: $white!important;
   font-size: 1.125rem;
   letter-spacing: .1rem;
-  min-height: 120px;
+  min-height: 150px;
   box-shadow: $suble-box-shadow;
 
   &__nav {
@@ -115,10 +115,13 @@ body {
 /* Header */
 .header {
   position: relative;
+  max-width: 1920px;
+  max-height: 780px;
 
   &__caption {
     position: absolute;
-    width: 26rem;
+    max-width: 432px;
+    max-height: 147px;
     background-color: $white;
     color: $dark;
     padding: 1rem .5rem;
@@ -126,7 +129,7 @@ body {
     left: 15%;
 
     &__heading--small {
-      font-size: 1.125rem;
+      font-size: 18px;
       color: $light-blue-font;
       
       &:after {
@@ -135,7 +138,7 @@ body {
     }
 
     &__heading--big {
-      font-size: 4.25rem;
+      font-size: 68px;
       font-weight: $semi-bold;
     }
   }
@@ -150,7 +153,7 @@ body {
     color: $dark-grey;
 
     &__heading--small {
-      font-size: 1.125rem;
+      font-size: 18px;
       color: $light-blue-font;
 
       &-about {
@@ -191,7 +194,7 @@ body {
     }
 
     &__heading--big {
-      font-size: 4.25rem;
+      font-size: 68px;
       font-weight: $semi-bold;
     }
   }
@@ -203,10 +206,15 @@ body {
 /* CLA Bar */
 
 .cla {
-  min-height: 120px;
+  max-height: 150px;
   color: $white;
   background: $blue-gradient;
   box-shadow: $suble-box-shadow;
+  padding: 2rem 0 2rem;
+
+  &__content {
+    font-size: 25px;
+  }
 
   &__button {
     color: $white;
@@ -220,9 +228,11 @@ body {
     }
 
     &--phone {
+      font-size: 24px;
       background: $orange-gradient;
     }
     &--mail {
+      font-size: 18px;
       color: $grey;
       background-color: $white;
 
@@ -248,23 +258,32 @@ body {
   &__feature {
     background-color: $white;
     box-shadow: $suble-box-shadow;
-    padding: 1.25rem 0;
-    margin-bottom: 1.6rem;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
     position: relative;
-    font-weight: $semi-bold;
 
     &:after {
       @include blue-gradient-border;
-  }
+    }
+
+    &__description {
+      font-size: 22px;
+      color: $grey;
+      font-weight: $semi-bold;
+
+      &--last {
+        color: $white;
+      }
+    }
 
     &--last {
       background: $blue-gradient;
-      color: $white;
     }
 
     &__image {
-      width: 10vh!important;
-      margin: 0 auto 2rem;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 1.5rem;
     }
   }
 }
@@ -350,14 +369,16 @@ body {
 /* Section Workflow */
 
 .workflow {
+
   &__image {
-    max-width: initial;
+    max-width: 1037px;
+    max-height: 691px;
   }
 
   &__card, &__card__header {
-    background-color: transparent !important;
-    border: none !important;
-    padding: 0 !important;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     margin-bottom: 1.25rem;
   }
 
@@ -377,18 +398,17 @@ body {
     }
 
     &__button {
-      outline: none!important;
-      width: 100% !important;
-      height: 3.75rem !important;
-      color: $dark !important;
-      text-align: left !important;
-      text-decoration: none !important;
+      font-size: 20px;
       font-weight: $semi-bold;
+      text-align: left!important;
+      outline: none!important;
+      width: 100%!important;
+      color: $dark!important;
+      text-decoration: none!important;
 
       &--number {
-        font-weight: bold;
         color: $light-blue-font;
-        margin: 0 0.625rem;
+        margin: 0 10px;
       }
     }
   }
@@ -417,7 +437,7 @@ body {
       border: none;
       color: $grey;
       background-color: $light-grey;
-      font-size: 2rem;
+      font-size: 30px;
       position: relative;
     
       &:hover .nav-link {
@@ -435,6 +455,8 @@ body {
       
       &__image {
         margin-right: 1.25rem;
+        width: 105px;
+        height: 105px;
       }
 
       &.active {
@@ -460,7 +482,10 @@ body {
   }
   &__content {
     background-color: $white;
+    color: $grey;
+    font-size: 18px;
     padding: 1.25rem;
+    line-height: 27px;
 
     &__button {
       @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
@@ -483,6 +508,15 @@ body {
   padding-bottom: 2rem;
 }
 
+.carousel {
+  &__logo {
+    &__image {
+      width: 190px!important; // override owl-item property
+      height: 80px;
+    }
+  }
+}
+
 /* End Section Brands */
 
 
@@ -501,14 +535,14 @@ body {
     text-align: center;
     color: $light-blue-font;
     font-size: 70px;
-    font-weight: bold;
+    font-weight: $semi-bold;
     position: relative;
   }
 
   &__blue-dot {
     position: absolute;
     top: -50px;
-    right: 40px;
+    right: 60px;
   }
 
   &__caption {
@@ -540,13 +574,21 @@ body {
     &:hover {
       box-shadow: $hover-box-shadow;
     }
+
+    &__content {
+      color: $dark;
+      margin-left: 20px;
+      line-height: 25px;
+    }
   }
 
   &__about {
     text-align: right;
   
     &--name {
+      font-size: 20px;
       font-weight: $semi-bold;
+      margin-bottom: 10px;
     }
   
     &--title {
@@ -570,8 +612,16 @@ body {
   &__about {
     margin-top: 50px;
 
-    &__description--bold {
+    &__description {
+      font-size: 15px;
+    }
+
+    &--bottom {
       color: $grey;
+      font-size: 20px;
+    }
+
+    &--bold {
       font-weight: $semi-bold;
     }
   }
@@ -591,6 +641,7 @@ body {
 
     &__link {
       color: $grey;
+      font-size: 18px;
       margin-left: 10px;
 
       
@@ -607,8 +658,9 @@ body {
 
     &__link {
       color: $grey;
-      font-weight: $semi-bold;
+      font-size: 20px;
       margin-left: 10px;
+      font-weight: $semi-bold;
 
     &:hover {
       text-decoration: none;
@@ -627,5 +679,9 @@ body {
 /* Section Copyright */
 .copyright {
   color: $grey;
+
+  &--bold {
+    font-weight: $semi-bold;
+  }
 }
 /* End Section Copyright */
