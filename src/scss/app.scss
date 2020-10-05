@@ -270,11 +270,16 @@ body {
 }
 
 .basket {
+  &__title {
+    color: $dark;
+  }
+
   &--bold {
     font-weight: $semi-bold;
   }
 
   &__footer {
+    color: $dark;
     padding-bottom: 2.5rem;
 
     &__caption {
