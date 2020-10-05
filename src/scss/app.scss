@@ -27,16 +27,12 @@ body {
 
 /* Navigation */
 .navbar {
-  background-color: $white!important;
-  font-size: 1.125rem;
-  letter-spacing: .1rem;
-  min-height: 150px;
-  box-shadow: $suble-box-shadow;
+  @include navbar;
 
   &__nav {
     &__item {
       margin: 0 1rem;
-      transition: all .1s ease-out;
+      transition: $transition;
 
       &:hover {
         @include blue-gradient-button(inline-block, 0, 0 20px, 100%);
@@ -45,7 +41,7 @@ body {
       &--login {
         position: relative;
         text-decoration: none;
-        transition: all .1s ease-out;
+        transition: $transition;
       }
 
       &--login:hover {
@@ -62,6 +58,7 @@ body {
 
       &--login {
         color: $nav-link-grey;
+        
         &:hover {
           color: $nav-link-grey;
         }
@@ -115,31 +112,30 @@ body {
 /* Header */
 .header {
   position: relative;
-  max-width: 1920px;
-  max-height: 780px;
+  max-width: $header-width;
+  max-height: $header-height;
 
   &__caption {
     position: absolute;
-    max-width: 432px;
-    max-height: 147px;
+    max-width: $header-caption-width;
+    max-height: $header-caption-height;
     background-color: $white;
-    color: $dark;
     padding: 1rem .5rem;
     bottom: 15%;
     left: 15%;
 
+    
+    &__heading--big {
+      @include heading($heading-font-big, $dark);
+      font-weight: $semi-bold;
+    }
+
     &__heading--small {
-      font-size: 18px;
-      color: $light-blue-font;
+      @include heading($heading-font-small, $light-blue-font);
       
       &:after {
         @include blue-gradient-line(5px, 30%);
       }
-    }
-
-    &__heading--big {
-      font-size: 68px;
-      font-weight: $semi-bold;
     }
   }
 }
@@ -150,11 +146,14 @@ body {
 /* Section Header Styles */ 
 .section {
   &__header {
-    color: $dark-grey;
+
+    &__heading--big {
+      @include heading($heading-font-big, $dark-grey);
+      font-weight: $semi-bold;
+    }
 
     &__heading--small {
-      font-size: 18px;
-      color: $light-blue-font;
+      @include heading($heading-font-small, $light-blue-font);
 
       &-about {
         &:after {
@@ -192,11 +191,6 @@ body {
         }
       }
     }
-
-    &__heading--big {
-      font-size: 68px;
-      font-weight: $semi-bold;
-    }
   }
 }
 
@@ -206,19 +200,19 @@ body {
 /* CLA Bar */
 
 .cla {
-  max-height: 150px;
+  max-height: $cla-height;
   color: $white;
   background: $blue-gradient;
   box-shadow: $suble-box-shadow;
   padding: 2rem 0 2rem;
 
   &__content {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 
   &__button {
     color: $white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     cursor: pointer;
 
     &:hover {
@@ -228,11 +222,11 @@ body {
     }
 
     &--phone {
-      font-size: 24px;
+      font-size: 1.5rem;
       background: $orange-gradient;
     }
     &--mail {
-      font-size: 18px;
+      font-size: 1.125rem;
       color: $grey;
       background-color: $white;
 
@@ -267,7 +261,7 @@ body {
     }
 
     &__description {
-      font-size: 22px;
+      font-size: 1.375rem;
       color: $grey;
       font-weight: $semi-bold;
 
@@ -281,8 +275,8 @@ body {
     }
 
     &__image {
-      width: 100px;
-      height: 100px;
+      width: 6.25rem;
+      height: 6.25rem;
       margin: 0 auto 1.5rem;
     }
   }
@@ -369,12 +363,12 @@ body {
 /* Section Workflow */
 
 .workflow {
-  max-width: 616px;
-  max-height: 70px;
+  max-width: $accordion-width;
+  max-height: $accordion-height;
 
   &__background {
-    min-width: 750px;
-    min-height: 500px;
+    min-width: $bg-image-width;
+    min-height: $bg-image-height;
   }
 
   &__card, &__card__header {
@@ -385,7 +379,7 @@ body {
   }
 
   &__card {
-    box-shadow: $accordin-box-shadow;
+    box-shadow: $accordion-box-shadow;
 
     &__body {
       padding: 1.25rem 0 1.25rem!important;
@@ -400,7 +394,7 @@ body {
     }
 
     &__button {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: $semi-bold;
       text-align: left!important;
       outline: none!important;
@@ -410,7 +404,7 @@ body {
 
       &--number {
         color: $light-blue-font;
-        margin: 0 10px;
+        margin: 0 0.625rem;
       }
     }
   }
@@ -439,7 +433,7 @@ body {
       border: none;
       color: $grey;
       background-color: $light-grey;
-      font-size: 30px;
+      font-size: 1.875rem;
       position: relative;
     
       &:hover .nav-link {
@@ -457,8 +451,8 @@ body {
       
       &__image {
         margin-right: 1.25rem;
-        width: 105px;
-        height: 105px;
+        width: 6.56rem;
+        height: 6.56rem;
       }
 
       &.active {
@@ -467,17 +461,7 @@ body {
         border-bottom: 2px solid $light-blue;
 
         .borderArrow {
-          display: inline-block;
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          margin-left: -10px;
-          width: 0;
-          height: 0;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid $light-blue;
-          border-bottom-color: $light-blue;
+          @include border-arrow;
         }
       }
     }
@@ -485,9 +469,9 @@ body {
   &__content {
     background-color: $white;
     color: $grey;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 1.25rem;
-    line-height: 27px;
+    line-height: 1.7rem;
 
     &__button {
       @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
@@ -513,8 +497,8 @@ body {
 .carousel {
   &__logo {
     &__image {
-      width: 190px!important; // override owl-item property
-      height: 80px;
+      width: $logo-width;
+      height: $logo-height;
     }
   }
 }
@@ -531,31 +515,31 @@ body {
 .counter {
 	display: flex;
 	justify-content: center;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   
   &__stats {
     text-align: center;
     color: $light-blue-font;
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: $semi-bold;
     position: relative;
   }
 
   &__blue-dot {
     position: absolute;
-    top: -50px;
-    right: 60px;
+    top: -25%;
+    right: 25%;
   }
 
   &__caption {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $grey;
     font-weight: normal;
   }
 
   &__image {
     margin: 0 auto;
-    max-width: 62px;
+    max-width: $counter-image-width;
   }
 }
 
@@ -571,7 +555,7 @@ body {
 .testimonials {
   &__card {
     box-shadow: $suble-box-shadow;
-    padding: 20px; 
+    padding: 1.25rem; 
     
     &:hover {
       box-shadow: $hover-box-shadow;
@@ -579,8 +563,8 @@ body {
 
     &__content {
       color: $dark;
-      margin-left: 20px;
-      line-height: 25px;
+      margin-left: 1.25rem;
+      line-height: 1.6rem;
     }
   }
 
@@ -588,9 +572,9 @@ body {
     text-align: right;
   
     &--name {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: $semi-bold;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
   
     &--title {
@@ -612,7 +596,7 @@ body {
 
 .footer {
   &__about {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 
     &__description {
       font-size: 15px;
@@ -620,7 +604,7 @@ body {
 
     &--bottom {
       color: $grey;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     &--bold {
@@ -631,7 +615,7 @@ body {
   &__title {
     color: $light-blue-font;
     font-weight: $semi-bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 
     &:after {
       @include blue-gradient-line(10px, 55%);
@@ -639,12 +623,12 @@ body {
   }
 
   &__links__list {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 
     &__link {
       color: $grey;
-      font-size: 18px;
-      margin-left: 10px;
+      font-size: 1.125rem;
+      margin-left: 0.625rem;
 
       
     &:hover {
@@ -656,22 +640,22 @@ body {
   }
 
   &__contact__list {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 
     &__link {
       color: $grey;
-      font-size: 20px;
-      margin-left: 10px;
+      font-size: 1.25rem;
+      margin-left: 0.625rem;
       font-weight: $semi-bold;
 
-    &:hover {
-      text-decoration: none;
+      &:hover {
       color: $dark;
-    }
+      text-decoration: none;
+      }
 
-    &--email {
-      font-weight: normal;
-    }
+      &--email {
+        font-weight: normal;
+      }
     }
   }
 }

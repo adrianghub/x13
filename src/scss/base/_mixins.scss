@@ -80,3 +80,30 @@
   border-radius: 25px;
   box-shadow: $suble-box-shadow;
 }
+
+@mixin navbar {
+  background-color: $white!important;
+  font-size: 1.125rem;
+  letter-spacing: .1rem;
+  min-height: $navbar-height;
+  box-shadow: $suble-box-shadow;
+}
+
+@mixin heading ($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin border-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $light-blue;
+  border-bottom-color: $light-blue;
+}
