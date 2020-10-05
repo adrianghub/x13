@@ -369,10 +369,12 @@ body {
 /* Section Workflow */
 
 .workflow {
+  max-width: 616px;
+  max-height: 70px;
 
-  &__image {
-    max-width: 1037px;
-    max-height: 691px;
+  &__background {
+    min-width: 750px;
+    min-height: 500px;
   }
 
   &__card, &__card__header {
