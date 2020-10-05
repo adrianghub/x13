@@ -274,12 +274,52 @@ body {
     color: $dark;
   }
 
+  &__content {
+    &__header {
+      border: none;
+    }
+
+    &__body {
+      &__row {
+        border-bottom: 1px solid $grey;
+
+      &:nth-child(odd) {
+        background-color: $light-grey;
+      }
+
+      &:last-child {
+        border: none;
+      }
+      }
+
+      &__top {
+        color: $grey;
+        &--price {
+          text-decoration: line-through;
+        }
+      }
+      &__bottom {
+        font-weight: $semi-bold;
+
+        &--logo {
+          color: $dark;
+          font-size: 1.3rem;
+        }
+        &--price {
+          color: $orange;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
   &--bold {
     font-weight: $semi-bold;
   }
 
   &__footer {
     color: $dark;
+    border: none;
     padding-bottom: 2.5rem;
 
     &__caption {
