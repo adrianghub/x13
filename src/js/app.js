@@ -1,6 +1,9 @@
 import '../scss/app.scss';
 import 'bootstrap';
 
+import $ from 'jquery';
+import 'owl.carousel';
+
 $(function() {
   $('.brand-carousel').owlCarousel({
     loop: true,

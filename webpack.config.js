@@ -14,6 +14,7 @@ const serverConfiguration = {
   },
 };
 
+const webpack = require('webpack');
 const path = require('path');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -83,6 +84,11 @@ const config = function(env, args) {
       ignored: /node_modules/,
     },
     plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
       new BrowserSyncPlugin({
         ...targetServerConfiguration,
         files: ['src/*'],
