@@ -25,7 +25,7 @@ body {
 }
 
 .main.active {
-  opacity: 0.5;
+  opacity:0.5;
 }
 
 
@@ -351,6 +351,10 @@ body {
 
 /* Section Workflow */
 
+.section-workflow {
+  background: $white;
+}
+
 .workflow {
   max-width: $accordion-width;
   max-height: $accordion-height;
@@ -480,6 +484,7 @@ body {
 /* Section Brands */
 
 .section-brands {
+  background: $white;
   padding-bottom: 2rem;
 }
 
@@ -538,6 +543,7 @@ body {
 /* Section Testimonials */
 
 .section-testimonials {
+  background: $white;
   padding: 3rem;
 }
 
@@ -653,6 +659,7 @@ body {
 
 /* Section Copyright */
 .copyright {
+  background: $white;
   color: $grey;
 
   &--bold {
