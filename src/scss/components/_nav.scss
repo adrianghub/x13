@@ -8,6 +8,7 @@
 
       &:hover {
         @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
+        box-shadow: $blue-button-box-shadow;
       }
 
       &:hover .link--navbar {
@@ -38,13 +39,12 @@
       &__label {
         color: $grey;
         font-size: 1rem;
-        margin-bottom: 0.625rem;
       }
   
       &__input {
         border: none;
         border-radius: 0;
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem;
       }
     }
   }

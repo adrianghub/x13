@@ -21,7 +21,11 @@
   }
 
   &__card {
-    box-shadow: $accordion-box-shadow;
+    box-shadow: $suble-box-shadow;
+
+    &:hover {
+      box-shadow: $hover-box-shadow;
+    }
 
     &__body {
       padding: 1.25rem 0 1.25rem!important;

@@ -25,12 +25,12 @@ $link-color: #ec1f4e;
 
 $orange-gradient: linear-gradient(90deg, rgba(255,177,0,1) 0%, rgba(255,114,0,1) 80%);
 $blue-gradient: linear-gradient(90deg, rgba(29,98,240,1) 0%, rgba(26,214,253,1) 70%);;
-
 $dark-blue: #1D62F0;
 $light-blue: #1AD6FD;
 $light-blue-font: #1BAAF8;
 $nav-link-grey: #5C666A;
 $grey: #707070;
+$darker-grey: #5D676A;
 $light-grey: #F3F3F3;
 $dark-grey: #434B4E;
 $orange: #FF7200;
@@ -38,9 +38,9 @@ $orange: #FF7200;
 
 /* Components */
 
-$suble-box-shadow: 0 .5rem .5rem rgba(0,0,0, 0.1);
-$hover-box-shadow: 0 .7rem .7rem rgba(0,0,0, 0.2);
-$accordion-box-shadow: 0 2px 20px 0 rgba(110, 130, 200, .18);
+$suble-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.09);
+$hover-box-shadow: 0 .5px 25px rgba(0,0,0, 0.18);
+$blue-button-box-shadow: 0 10px 20px rgba(27, 160, 247, 0.5);
 $transition: all .1s ease-out;
 
 /* Nav */

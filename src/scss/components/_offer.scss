@@ -44,6 +44,7 @@
         color: $dark;
         background-color: $white;
         border-bottom: 2px solid $light-blue;
+        box-shadow: $suble-box-shadow;
 
         .borderArrow {
           @include border-arrow;
@@ -64,7 +65,7 @@
       &:hover {
         color: darken($white, 5%);
         text-decoration: none;
-        box-shadow: $hover-box-shadow;
+        box-shadow: $blue-button-box-shadow;
       }
     }
   }

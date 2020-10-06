@@ -44,10 +44,17 @@
 @import 'components/footer';
 @import 'components/copyright';
 
+/* bold items */
+
+.bold {
+  font-weight: $semi-bold;
+}
+
 /* ------buttons------ */
 .button {
   &--form {
-    @include blue-gradient-button(block, 3rem auto 1rem, 10px 30px, 60%);
+    @include blue-gradient-button(block, 3rem auto 1rem, 15px 35px, 70%);
+    box-shadow: $blue-button-box-shadow;
     
     &:hover {
       color: darken($white, 5%);

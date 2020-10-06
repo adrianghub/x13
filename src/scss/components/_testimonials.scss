@@ -15,7 +15,7 @@
     }
 
     &__content {
-      color: $dark;
+      color: $darker-grey;
       margin-left: 1.25rem;
       line-height: 1.6rem;
     }
@@ -25,13 +25,14 @@
     text-align: right;
   
     &--name {
+      color: $dark;
       font-size: 1.25rem;
       font-weight: $semi-bold;
       margin-bottom: 0.625rem;
     }
   
     &--title {
-      color: $grey;
+      color: $dark-grey;
     }
   }
 }
