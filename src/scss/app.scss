@@ -31,77 +31,50 @@ body {
 
   &__nav {
     &__item {
-      margin: 0 1rem;
-      transition: $transition;
+      padding: 5px 20px;
 
       &:hover {
-        @include blue-gradient-button(inline-block, 0, 0 20px, 100%);
+        @include blue-gradient-button(inline-block, 0, 5px 20px, 100%);
       }
 
-      &--login {
-        position: relative;
-        text-decoration: none;
-        transition: $transition;
-      }
-
-      &--login:hover {
-        background-color: $light-grey;
+      &:hover .navbar__nav__link {
+        color: $white!important; // override nav hover effect
       }
     }
 
     &__link {
-      color: $nav-link-grey;
-      
-      &:hover {
-        color: $white!important
-      }
-
-      &--login {
-        color: $nav-link-grey;
-        
-        &:hover {
-          color: $nav-link-grey;
-        }
-      }
-    }
-    &__link.active {
-      font-weight: $semi-bold;
+      color: $grey;
     }
   }
 }
 
-.login__form {
+.login {
+  padding: 15px;
+  padding-bottom: 10px;
+  width: 477px;
+  /* height: 503px; */
   position: absolute;
-  top: 90px;
-  right: 200px;
-  background-color: $light-grey;
+  top: 100px;
+  left: -300px;
 
-  &__content {
-    width: 120%;
-    padding: 20px;
+  &__form {
     background-color: $light-grey;
-    border: none;
-    border-radius: 0;
-
-    &__label {
-      color: $dark;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    &__input {
+  
+    &__content {
+      background-color: $light-grey;
       border: none;
       border-radius: 0;
-    }
-  }
-
-  &__button {
-    @include blue-gradient-button(block, 50px 0 0, 10px 40px, 100%);
-
-    &:hover {
-      text-decoration: none;
-      box-shadow: $hover-box-shadow;
-      cursor: pointer;
+  
+      &__label {
+        color: $dark;
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+      }
+  
+      &__input {
+        border: none;
+        border-radius: 0;
+      }
     }
   }
 }
