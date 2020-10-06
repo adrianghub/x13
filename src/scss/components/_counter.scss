@@ -1,0 +1,38 @@
+/* Section Counter */
+.section-counter {
+  background-color: $light-grey;
+  padding-bottom: 3rem;
+}
+
+.counter {
+	display: flex;
+	justify-content: center;
+  margin-top: 3.125rem;
+  
+  &__stats {
+    text-align: center;
+    color: $light-blue-font;
+    font-size: 4.375rem;
+    font-weight: $semi-bold;
+    position: relative;
+  }
+
+  &__blue-dot {
+    position: absolute;
+    top: -25%;
+    right: 25%;
+  }
+
+  &__caption {
+    font-size: 1.25rem;
+    color: $grey;
+    font-weight: normal;
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-width: $counter-image-width;
+  }
+}
+
+/* End Section Counter */

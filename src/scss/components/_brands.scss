@@ -1,0 +1,17 @@
+/* Section Brands */
+
+.section-brands {
+  background: $white;
+  padding-bottom: 2rem;
+}
+
+.carousel {
+  &__logo {
+    &__image {
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+}
+
+/* End Section Brands */

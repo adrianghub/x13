@@ -1,0 +1,13 @@
+/* Section Copyright */
+.section-copyright {
+  background: $white;
+}
+
+.copyright {
+  color: $grey;
+
+  &--bold {
+    font-weight: $semi-bold;
+  }
+}
+/* End Section Copyright */

@@ -1,0 +1,54 @@
+/* Navigation */
+.navbar {
+  @include navbar;
+
+  &__nav {
+    &__item {
+      padding: 0.5rem 1.5rem;
+
+      &:hover {
+        @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
+      }
+
+      &:hover .link--navbar {
+        color: $white!important; // override nav hover effect
+      }
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navbar__nav__item:hover .login {
+    display: block;
+  }
+
+  .login { 
+    display: none;
+    background-color: $light-grey;
+    padding: 50px 50px 20px;
+    min-width: 477px;
+    left: -200%; 
+
+    &__form {      
+    &__content {
+      background-color: $light-grey;
+      border: none;
+      border-radius: 0;
+  
+      &__label {
+        color: $grey;
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+      }
+  
+      &__input {
+        border: none;
+        border-radius: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  }
+}
+
+/* End Navigation */

@@ -1,0 +1,41 @@
+/* Section About */
+
+.section-about {
+	background-color: $light-grey;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about {
+  &__feature {
+    background-color: $white;
+    box-shadow: $suble-box-shadow;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &:after {
+      @include blue-gradient-border;
+    }
+
+    &__description {
+      font-size: 1.375rem;
+      color: $grey;
+      font-weight: $semi-bold;
+
+      &--last {
+        color: $white;
+      }
+    }
+
+    &--last {
+      background: $blue-gradient;
+    }
+
+    &__image {
+      width: 6.25rem;
+      height: 6.25rem;
+      margin: 0 auto 1.5rem;
+    }
+  }
+}

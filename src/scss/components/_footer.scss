@@ -1,0 +1,45 @@
+/* Section Footer */
+
+.section-footer {
+  background-color: $light-grey;
+  color: $grey;
+}
+
+.footer {
+  &__about {
+    margin-top: 3.125rem;
+
+    &__description {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &--bottom {
+      color: $grey;
+      font-size: 1.25rem;
+    }
+
+    &--bold {
+      font-weight: $semi-bold;
+    }
+  }
+
+  &__title {
+    color: $light-blue-font;
+    font-weight: $semi-bold;
+    font-size: 1.25rem;
+
+    &:after {
+      @include blue-gradient-line(10px, 55%);
+    }
+  }
+
+  &__links__list {
+    margin-top: 1.25rem;
+  }
+
+  &__contact__list {
+    margin-top: 1.25rem;
+  }
+}
+/* End Section Footer */

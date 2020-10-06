@@ -1,0 +1,73 @@
+/* Section Offer */
+
+.section-offer {
+	background-color: $light-grey;
+  padding-bottom: 3rem;
+}
+
+.borderArrow {
+  display: none;
+}
+
+.offer {
+  &__list {
+    &__item {
+      flex-basis: 0;
+      flex-grow: 1;
+      text-align: center;
+      border: none;
+      color: $grey;
+      background-color: $light-grey;
+      font-size: 1.875rem;
+      position: relative;
+    
+      &:hover .nav-link {
+        box-shadow: $suble-box-shadow;
+        color: $dark!important;
+      }
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $grey;
+      font-weight: $semi-bold;
+      padding: 1.25rem;
+
+      
+      &__image {
+        margin-right: 1.25rem;
+        width: 6.56rem;
+        height: 6.56rem;
+      }
+
+      &.active {
+        color: $dark;
+        background-color: $white;
+        border-bottom: 2px solid $light-blue;
+
+        .borderArrow {
+          @include border-arrow;
+        }
+      }
+    }
+  }
+  &__content {
+    background-color: $white;
+    color: $grey;
+    font-size: 1.125rem;
+    padding: 1.25rem;
+    line-height: 1.7rem;
+
+    &__button {
+      @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
+
+      &:hover {
+        color: darken($white, 5%);
+        text-decoration: none;
+        box-shadow: $hover-box-shadow;
+      }
+    }
+  }
+}
+
+/* End Section Offer */

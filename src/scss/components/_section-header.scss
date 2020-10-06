@@ -1,0 +1,52 @@
+/* Section Header Styles */ 
+.section {
+  &__header {
+
+    &__heading--big {
+      @include heading($heading-font-big, $dark-grey);
+      font-weight: $semi-bold;
+    }
+
+    &__heading--small {
+      @include heading($heading-font-small, $light-blue-font);
+
+      &-about {
+        &:after {
+          @include blue-gradient-line(10px, 30%);
+        }
+      }
+      
+      &-workflow {
+        &:after {
+          @include blue-gradient-line(10px, 55%);
+        }
+      }
+
+      &-offer {
+        &:after {
+          @include blue-gradient-line(10px, 35%);
+        }
+      }
+
+      &-brands {
+        &:after {
+          @include blue-gradient-line(10px, 25%);
+        }
+      }
+
+      &-counter {
+        &:after {
+          @include blue-gradient-line(10px, 35%);
+        }
+      }
+
+      &-testimonials {
+        &:after {
+          @include blue-gradient-line(10px, 15%);
+        }
+      }
+    }
+  }
+}
+
+/* End Section Header Styles */ 

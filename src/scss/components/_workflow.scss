@@ -1,0 +1,55 @@
+/* Section Workflow */
+
+.section-workflow {
+  background: $white;
+}
+
+.workflow {
+  max-width: $accordion-width;
+  max-height: $accordion-height;
+
+  &__background {
+    min-width: $bg-image-width;
+    min-height: $bg-image-height;
+  }
+
+  &__card, &__card__header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  &__card {
+    box-shadow: $accordion-box-shadow;
+
+    &__body {
+      padding: 1.25rem 0 1.25rem!important;
+
+      &:after {
+        @include blue-gradient-border;
+      }
+
+      &__description {
+        padding: 0 1.25rem!important;
+      }
+    }
+
+    &__button {
+      font-size: 1.25rem;
+      font-weight: $semi-bold;
+      text-align: left!important;
+      outline: none!important;
+      width: 100%!important;
+      color: $dark!important;
+      text-decoration: none!important;
+
+      &--number {
+        color: $light-blue-font;
+        margin: 0 0.625rem;
+      }
+    }
+  }
+}
+
+/* End Section Workflow */

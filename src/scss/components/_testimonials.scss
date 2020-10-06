@@ -1,0 +1,39 @@
+/* Section Testimonials */
+
+.section-testimonials {
+  background: $white;
+  padding: 3rem;
+}
+
+.testimonials {
+  &__card {
+    box-shadow: $suble-box-shadow;
+    padding: 1.25rem; 
+    
+    &:hover {
+      box-shadow: $hover-box-shadow;
+    }
+
+    &__content {
+      color: $dark;
+      margin-left: 1.25rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  &__about {
+    text-align: right;
+  
+    &--name {
+      font-size: 1.25rem;
+      font-weight: $semi-bold;
+      margin-bottom: 0.625rem;
+    }
+  
+    &--title {
+      color: $grey;
+    }
+  }
+}
+
+/* End Section Testimonials */

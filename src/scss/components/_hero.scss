@@ -1,0 +1,32 @@
+/* Header */
+.hero {
+  position: relative;
+  max-width: $header-width;
+  margin: 0 auto;
+
+  &__caption {
+    position: absolute;
+    max-width: $header-caption-width;
+    max-height: $header-caption-height;
+    background-color: $white;
+    padding: 1rem .5rem;
+    bottom: 15%;
+    left: 15%;
+
+    
+    &__heading--big {
+      @include heading($heading-font-big, $dark);
+      font-weight: $semi-bold;
+    }
+
+    &__heading--small {
+      @include heading($heading-font-small, $light-blue-font);
+      
+      &:after {
+        @include blue-gradient-line(5px, 30%);
+      }
+    }
+  }
+}
+
+/* End Header */
