@@ -78,6 +78,10 @@ $('.counting4').jQuerySimpleCounter({
   duration: 3000,
 });
 
-$('#navbarDropdownMenuLink').on('click', function() {
-  $('#main').toggleClass('active');
+$('.dropdown-menu').on('mouseenter', function() {
+  $('#main').addClass('active');
+});
+
+$('.dropdown-menu').on('mouseleave', function() {
+  $('#main').removeClass('active');
 });

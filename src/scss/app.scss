@@ -35,10 +35,10 @@ body {
 
   &__nav {
     &__item {
-      padding: 5px 20px;
+      padding: 0.5rem 1.5rem;
 
       &:hover {
-        @include blue-gradient-button(inline-block, 0, 5px 20px, 100%);
+        @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
       }
 
       &:hover .navbar__nav__link {
@@ -52,14 +52,19 @@ body {
   }
 }
 
-.login {
-  background-color: $light-grey;
-  padding: 50px 50px 20px;
-  min-width: 477px;
-  top: 186%;
-  left: -220%;
+@media all and (min-width: 992px) {
+  .navbar__nav__item:hover .login {
+    display: block;
+  }
 
-  &__form {      
+  .login { 
+    display: none;
+    background-color: $light-grey;
+    padding: 50px 50px 20px;
+    min-width: 477px;
+    left: -200%; 
+
+    &__form {      
     &__content {
       background-color: $light-grey;
       border: none;
@@ -86,6 +91,7 @@ body {
         box-shadow: $hover-box-shadow;
       }
     }
+  }
   }
 }
 
