@@ -77,3 +77,7 @@ $('.counting4').jQuerySimpleCounter({
   end: 65,
   duration: 3000,
 });
+
+$('#navbarDropdownMenuLink').on('click', function() {
+  $('#main').toggleClass('active');
+});

@@ -24,6 +24,10 @@ body {
   overflow-x: hidden;
 }
 
+.main.active {
+  opacity: 0.5;
+}
+
 
 /* Navigation */
 .navbar {
@@ -49,24 +53,20 @@ body {
 }
 
 .login {
-  padding: 15px;
-  padding-bottom: 10px;
-  width: 477px;
-  /* height: 503px; */
-  position: absolute;
-  top: 100px;
-  left: -300px;
+  background-color: $light-grey;
+  padding: 50px 50px 20px;
+  min-width: 477px;
+  top: 186%;
+  left: -220%;
 
-  &__form {
-    background-color: $light-grey;
-  
+  &__form {      
     &__content {
       background-color: $light-grey;
       border: none;
       border-radius: 0;
   
       &__label {
-        color: $dark;
+        color: $grey;
         font-size: 1rem;
         margin-bottom: 0.625rem;
       }
@@ -74,6 +74,16 @@ body {
       &__input {
         border: none;
         border-radius: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    &__button {
+      @include blue-gradient-button(block, 3rem auto 1rem, 10px 30px, 60%);
+
+      &:hover {
+        color: darken($white, 5%);
+        text-decoration: none;
+        box-shadow: $hover-box-shadow;
       }
     }
   }
