@@ -11,6 +11,48 @@
 
 /* Components */
 
+
+/* ------buttons------ */
+.button {
+  &--form {
+    @include blue-gradient-button(block, 3rem auto 1rem, 10px 30px, 60%);
+    
+    &:hover {
+      color: darken($white, 5%);
+      text-decoration: none;
+      box-shadow: $hover-box-shadow;
+    }
+  }
+}
+
+/* ------links------ */
+.link {
+  color: $grey;
+
+  &__footer {
+    margin-left: 0.625rem;
+
+    &--nav {
+      font-size: 1.125rem;
+    }
+
+    &--contact {
+      font-size: 1.25rem;
+      margin-left: 0.625rem;
+      font-weight: $semi-bold;
+
+      &--email {
+        font-weight: normal;
+      }
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    color: $dark;
+  }
+}
+
+
 /* Demo styles */
 
 html {
@@ -41,13 +83,9 @@ body {
         @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
       }
 
-      &:hover .navbar__nav__link {
+      &:hover .link--navbar {
         color: $white!important; // override nav hover effect
       }
-    }
-
-    &__link {
-      color: $grey;
     }
   }
 }
@@ -82,15 +120,6 @@ body {
         margin-bottom: 2rem;
       }
     }
-    &__button {
-      @include blue-gradient-button(block, 3rem auto 1rem, 10px 30px, 60%);
-
-      &:hover {
-        color: darken($white, 5%);
-        text-decoration: none;
-        box-shadow: $hover-box-shadow;
-      }
-    }
   }
   }
 }
@@ -102,7 +131,7 @@ body {
 .header {
   position: relative;
   max-width: $header-width;
-  max-height: $header-height;
+  margin: 0 auto;
 
   &__caption {
     position: absolute;
@@ -619,47 +648,21 @@ body {
 
   &__links__list {
     margin-top: 1.25rem;
-
-    &__link {
-      color: $grey;
-      font-size: 1.125rem;
-      margin-left: 0.625rem;
-
-      
-    &:hover {
-      text-decoration: none;
-      color: $dark;
-    }
-    }
-    
   }
 
   &__contact__list {
     margin-top: 1.25rem;
-
-    &__link {
-      color: $grey;
-      font-size: 1.25rem;
-      margin-left: 0.625rem;
-      font-weight: $semi-bold;
-
-      &:hover {
-      color: $dark;
-      text-decoration: none;
-      }
-
-      &--email {
-        font-weight: normal;
-      }
-    }
   }
 }
 /* End Section Footer */
 
 
 /* Section Copyright */
-.copyright {
+.section-copyright {
   background: $white;
+}
+
+.copyright {
   color: $grey;
 
   &--bold {
