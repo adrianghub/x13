@@ -1,8 +1,8 @@
-import '../scss/app.scss';
 import 'bootstrap';
-
 import $ from 'jquery';
 import 'owl.carousel';
+
+import '../scss/app.scss';
 
 // eslint-disable-next-line no-unused-vars
 import '@srexi/purecounterjs';
