@@ -8,7 +8,7 @@
 .testimonials {
   &__card {
     box-shadow: $suble-box-shadow;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     
     &:hover {
       box-shadow: $hover-box-shadow;
@@ -28,8 +28,8 @@
         position: absolute;
         top: 25%;
         left: -8%;
-        width: 50px;
-        height: 50px;
+        width: 3.125rem;
+        height: 3.125rem;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         content: url('../images/design/apostrophe.png');
