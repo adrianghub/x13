@@ -23,6 +23,7 @@
     
       &:hover .nav-link {
         box-shadow: $suble-box-shadow;
+        // override nav hover effect
         color: $dark!important;
       }
     }

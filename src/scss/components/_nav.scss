@@ -12,7 +12,8 @@
       }
 
       &:hover .link--navbar {
-        color: $white!important; // override nav hover effect
+        // override nav hover effect
+        color: $white!important;
       }
     }
   }

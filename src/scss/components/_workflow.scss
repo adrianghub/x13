@@ -28,20 +28,21 @@
     }
 
     &__body {
-      padding: 1.25rem 0 1.25rem!important;
+      padding: 1.25rem 0 1.25rem;
 
       &:after {
         @include blue-gradient-border;
       }
 
       &__description {
-        padding: 0 1.25rem!important;
+        padding: 0 1.25rem;
       }
     }
 
     &__button {
       font-size: 1.25rem;
       font-weight: $semi-bold;
+      // override default button styles 
       text-align: left!important;
       outline: none!important;
       width: 100%!important;
