@@ -11,6 +11,10 @@
   &__background {
     min-width: $bg-image-width;
     min-height: $bg-image-height;
+    background-image: url('../images/design/service-worker.png'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: right;
   }
 
   &__card, &__card__header {
