@@ -26,10 +26,10 @@ $(function() {
   });
 
   $('.dropdown-menu').on('mouseenter', function() {
-    $('#main').addClass('active');
+    $('#main').addClass('h-active');
   });
 
   $('.dropdown-menu').on('mouseleave', function() {
-    $('#main').removeClass('active');
+    $('#main').removeClass('h-active');
   });
 });
