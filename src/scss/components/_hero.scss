@@ -12,19 +12,18 @@
     padding: 1rem;
     bottom: 15%;
     left: 15%;
+  }
 
+  &__heading--big {
+    @include heading($heading-font-big, $dark);
+    font-weight: $semi-bold;
+  }
+
+  &__heading--small {
+    @include heading($heading-font-small, $light-blue-font);
     
-    &__heading--big {
-      @include heading($heading-font-big, $dark);
-      font-weight: $semi-bold;
-    }
-
-    &__heading--small {
-      @include heading($heading-font-small, $light-blue-font);
-      
-      &:after {
-        @include blue-gradient-line(5px, 30%);
-      }
+    &:after {
+      @include blue-gradient-line(5px, 30%);
     }
   }
 }
