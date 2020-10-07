@@ -2,53 +2,49 @@
 .navbar {
   @include navbar;
 
-  &__nav {
-    &__item {
-      padding: 0.5rem 1.5rem;
+  &__item {
+    padding: 0.5rem 1.5rem;
 
-      &:hover {
-        @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
-        box-shadow: $blue-button-box-shadow;
-      }
+    &:hover {
+      @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
+      box-shadow: $blue-button-box-shadow;
+    }
 
-      &:hover .link--navbar {
-        // override nav hover effect
-        color: $white!important;
-      }
+    &:hover .link--navbar {
+      // override nav hover effect
+      color: $white!important;
     }
   }
 }
 
 @media all and (min-width: 992px) {
-  .navbar__nav__item:hover .login {
+  .navbar__item:hover .login {
     display: block;
   }
 
-  .login { 
+  .f-login { 
     display: none;
     background-color: $light-grey;
     padding: 50px 50px 20px;
     min-width: 477px;
     left: -200%; 
 
-    &__form {      
     &__content {
       background-color: $light-grey;
       border: none;
       border-radius: 0;
-  
-      &__label {
-        color: $grey;
-        font-size: 1rem;
-      }
-  
-      &__input {
-        border: none;
-        border-radius: 0;
-        margin: 1rem 0 2rem;
-      }
     }
-  }
+
+    &__label {
+      color: $grey;
+      font-size: 1rem;
+    }
+
+    &__input {
+      border: none;
+      border-radius: 0;
+      margin: 1rem 0 2rem;
+    }
   }
 }
 
