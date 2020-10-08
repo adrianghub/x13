@@ -1,8 +1,8 @@
 {
-  "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "4.5.0",
-  "description": "Starter project template boilerplate based on Webpack with SASS and babel ES6/7 support.",
-  "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
+  "name": "@x13/assignment",
+  "version": "1.0.0",
+  "description": "Website project assignment.",
+  "homepage": "https://github.com/adrianghub/x13-zadanie-rekrutacyjne",
   "scripts": {
     "build": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
@@ -19,22 +19,15 @@
     "template",
     "setup"
   ],
-  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
   "contributors": [
     {
-      "name": "Plamen Nikolov",
-      "email": "me@pnikoloff.com",
-      "url": "https://pnikoloff.com"
+      "name": "Adrian Zinko"
     }
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
-    "email": "plamen@athlonsofia.com"
+    "url": "https://github.com/adrianghub/x13-zadanie-rekrutacyjne"
   },
   "engines": {
     "node": "^10 || ^12 || >=14"
@@ -50,7 +43,6 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
-    "ajv": "^6.12.5",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "2.2.2",
@@ -78,7 +70,6 @@
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^4.2.2",
-    "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
