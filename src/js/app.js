@@ -1,5 +1,10 @@
+/* eslint-disable no-unused-vars */
 import $ from 'jquery';
-import 'bootstrap';
+
+import 'bootstrap/js/src/tab';
+import 'bootstrap/js/src/dropdown';
+import 'bootstrap/js/src/modal';
+import 'bootstrap/js/src/collapse';
 import 'owl.carousel';
 import '@srexi/purecounterjs';
 
