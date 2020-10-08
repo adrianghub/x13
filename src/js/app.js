@@ -33,6 +33,4 @@ $(function() {
   $('.dropdown').on('hide.bs.dropdown ', function() {
     $('#main').css('opacity', '1');
   });
-
-  $('.dropdown-menu').dropdown();
 });
