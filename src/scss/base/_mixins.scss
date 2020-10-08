@@ -82,6 +82,13 @@
   box-shadow: $suble-box-shadow;
 }
 
+@mixin cla-button ($color, $font-size, $padding, $background) {
+  color: $color;
+  font-size: $font-size;
+  padding: $padding;
+  background: $background;
+}
+
 @mixin navbar {
   // override navbar style
   background-color: $white!important;
@@ -109,3 +116,10 @@
   border-top: 10px solid $light-blue;
   border-bottom-color: $light-blue;
 }
+
+@mixin hover-btn ($color) {
+    color: darken($color, 5%);
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: $hover-box-shadow;
+} 

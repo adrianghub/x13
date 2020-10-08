@@ -9,29 +9,6 @@
   &__content {
     font-size: 1.6rem;
   }
-
-  &__button {
-    color: $white;
-    cursor: pointer;
-    box-shadow: $suble-box-shadow;
-
-    &:hover {
-      text-decoration: none;
-      box-shadow: $hover-box-shadow;
-    }
-
-    &--phone {
-      font-size: 1.5rem;
-      padding: 0.5rem 1.25rem;
-      background: $orange-gradient;
-    }
-    &--mail {
-      color: $grey;
-      font-size: 1.125rem;
-      padding: 0.7rem 1.25rem;
-      background-color: $white;
-    }
-  }
 }
 
 /* End CLA Bar */
