@@ -11,41 +11,7 @@
     content: '';
     display: table;
   }
-}
-
-// Media queries
-
-// min-width
-@mixin media-above($bp) {
-
-  @if map-has-key($bps, $bp) {
-
-    $bp-value: map-get($bps, $bp);
-
-    @media screen and (min-width: $bp-value) { @content; }
-
-  } else {
-
-    @warn 'Invalid breakpoint: #{$bp}.';
-  }
-}
-
-// max-width
-@mixin media-below($bp) {
-
-  @if map-has-key($bps, $bp) {
-
-    $bp-value: map-get($bps, $bp);
-
-    @media screen and (max-width: $bp-value - 1) { @content; }
-
-  } else {
-
-    @warn 'Invalid breakpoint: #{$bp}.';
-  }
-}
-
-  
+}  
 
 // Text selection
 @mixin text-selection($color-selection, $color-selection-bg) {

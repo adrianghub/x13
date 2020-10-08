@@ -134,3 +134,31 @@ body {
   font-family: 'Poppins', arial, serif;
   overflow-x: hidden;
 }
+
+/* Media Queries */
+
+
+// define min-width breakpoint at which layout changes
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// define the maximum width for different screen sizes
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1920px
+);
+
+// media of at least the breakpoint width
+@include media-breakpoint-up(sm) {  
+}
+
+// media of at most the maximum breakpoint width
+@include media-breakpoint-down(sm) {
+} 
