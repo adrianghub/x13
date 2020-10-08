@@ -81,8 +81,6 @@
 }
 
 @mixin navbar {
-  // override navbar style
-  background-color: $white!important;
   font-size: 1.125rem;
   min-height: $navbar-height;
   box-shadow: $suble-box-shadow;
