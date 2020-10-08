@@ -4,15 +4,17 @@
 
   &__item {
     padding: 0.5rem 1.5rem;
+    @include add-transitions( color .2s, font-weight .2 );
 
     &:hover {
       @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
       box-shadow: $blue-button-box-shadow;
+      font-weight: normal;
     }
 
-    &:hover .link--navbar {
+    &:hover .c-link--navbar {
       // override nav hover effect
-      color: $white!important;
+      font-weight: $semi-bold;
     }
   }
 }

@@ -1,30 +1,11 @@
 /* Bootstrap */
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/input-group";
-@import "~bootstrap/scss/utilities";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/media";
+@import 'bootstrap/bootstrap.scss';
 
 /* Owl Carousel */
 @import '~owl.carousel/dist/assets/owl.carousel.css';
 
 /* Core variables */
 @import 'base/vars';
-
-/* Custom variables */
-@import 'base/custom_vars';
 
 /* CSS Reset */
 @import 'base/reset';
@@ -104,7 +85,20 @@
 .c-link {
   color: $grey;
   margin-left: 0.625rem;
-  @include add_transitions(box-shadow .3s, font-weight .3s);
+  @include add_transitions(color .3s);
+
+  &--navbar {
+    margin: 0;
+
+    &:before {
+      display: block;
+      content: attr(title);
+      font-weight: $semi-bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
 
   &--nav {
     font-size: 1.125rem;
