@@ -17,30 +17,27 @@
   }
 }
 
-@media all and (min-width: 992px) {
-  .c-login { 
+.c-login { 
+  background-color: $light-grey;
+  padding: 50px 50px 20px;
+  min-width: 477px;
+  left: -200%; 
+
+  &__content {
     background-color: $light-grey;
-    padding: 50px 50px 20px;
-    min-width: 477px;
-    left: -200%; 
+    border: none;
+    border-radius: 0;
+  }
 
-    &__content {
-      background-color: $light-grey;
-      border: none;
-      border-radius: 0;
-    }
+  &__label {
+    color: $grey;
+    font-size: 1rem;
+  }
 
-    &__label {
-      color: $grey;
-      font-size: 1rem;
-    }
-
-    &__input {
-      border: none;
-      border-radius: 0;
-      margin: 1rem 0 2rem;
-    }
+  &__input {
+    border: none;
+    border-radius: 0;
+    margin: 1rem 0 2rem;
   }
 }
-
 /* End Navigation */
