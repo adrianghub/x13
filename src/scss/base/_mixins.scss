@@ -22,6 +22,10 @@
   }
 }
 
+@mixin media($min-width) {
+  @media screen and (min-width: $min-width) { @content; }
+}
+
 // Text selection
 @mixin text-selection($color-selection, $color-selection-bg) {
   ::-moz-selection { // sass-lint:disable-line no-vendor-prefixes
@@ -117,9 +121,12 @@
   border-bottom-color: $light-blue;
 }
 
-@mixin hover-btn ($color) {
+@mixin hover-item ($color, $box-shadow: null, $font-weight: null) {
     color: darken($color, 5%);
     cursor: pointer;
     text-decoration: none;
-    box-shadow: $hover-box-shadow;
+    box-shadow: $box-shadow;
+    font-weight: $font-weight;
 } 
+
+@mixin add_transitions ($transitions...) { transition: $transitions };
