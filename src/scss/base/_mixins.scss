@@ -61,8 +61,7 @@
 
 @mixin blue-gradient-button ($display, $margin, $padding, $max-width) {
   background: $blue-gradient;
-  // override navbar style
-  color: $white!important;
+  color: $white;
   padding: $padding;
   font-weight: $semi-bold;
   max-width: $max-width;
@@ -83,6 +82,7 @@
 @mixin navbar {
   font-size: 1.125rem;
   min-height: $navbar-height;
+  background-color: #fff;
   box-shadow: $suble-box-shadow;
   padding: 0;
 }

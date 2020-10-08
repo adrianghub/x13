@@ -13,7 +13,8 @@
     }
 
     &:hover .c-link--navbar {
-      // override nav hover effect
+      // override default nav link behaviour
+      color: $white!important;
       font-weight: $semi-bold;
     }
   }
