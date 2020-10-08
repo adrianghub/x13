@@ -1,9 +1,9 @@
 import $ from 'jquery';
-import { util } from 'bootstrap';
+import 'bootstrap';
 import 'owl.carousel';
+import '@srexi/purecounterjs';
 
 import '../scss/app.scss';
-import '@srexi/purecounterjs';
 
 $(function() {
   $('.brand-carousel').owlCarousel({
