@@ -18,12 +18,7 @@
 }
 
 @media all and (min-width: 992px) {
-  .navbar__item:hover .c-login {
-    display: block;
-  }
-
   .c-login { 
-    display: none;
     background-color: $light-grey;
     padding: 50px 50px 20px;
     min-width: 477px;

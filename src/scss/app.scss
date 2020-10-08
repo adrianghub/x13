@@ -54,7 +54,7 @@
 }
 
 /* ------buttons------ */
-.c-button {
+.c-btn {
   &--form {
     @include blue-gradient-button(block, 3rem auto 1rem, 15px 35px, 70%);
     box-shadow: $blue-button-box-shadow;
@@ -106,8 +106,4 @@ body {
   color: $foreground-color;
   font-family: 'Poppins', arial, serif;
   overflow-x: hidden;
-}
-
-.main.h-active {
-  opacity:0.5;
 }

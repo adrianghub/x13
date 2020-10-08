@@ -1,4 +1,5 @@
 import 'bootstrap';
+
 import $ from 'jquery';
 import 'owl.carousel';
 
@@ -25,11 +26,13 @@ $(function() {
     },
   });
 
-  $('.dropdown-menu').on('mouseenter', function() {
-    $('#main').addClass('h-active');
+  $('.dropdown').on('show.bs.dropdown ', function() {
+    $('#main').css('opacity', '0.5');
   });
 
-  $('.dropdown-menu').on('mouseleave', function() {
-    $('#main').removeClass('h-active');
+  $('.dropdown').on('hide.bs.dropdown ', function() {
+    $('#main').css('opacity', '1');
   });
+
+  $('.dropdown-menu').dropdown();
 });
