@@ -54,7 +54,7 @@
 }
 
 /* ------buttons------ */
-.button {
+.c-button {
   &--form {
     @include blue-gradient-button(block, 3rem auto 1rem, 15px 35px, 70%);
     box-shadow: $blue-button-box-shadow;
@@ -68,7 +68,7 @@
 }
 
 /* ------links------ */
-.link {
+.c-link {
   color: $grey;
 
   &__footer {
