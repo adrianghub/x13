@@ -49,13 +49,12 @@
   width: 100%;
 }
 
-@mixin blue-gradient-line($margin-left, $width) {
-  background: $blue-gradient;
+@mixin blue-gradient-line($margin-left, $width: null) {
+  flex-grow: 1;
   content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: $margin-left;
   height: 1px;
+  margin-left: $margin-left;
+  background: $blue-gradient;
   width: $width;
 }
 

@@ -8,42 +8,18 @@
 
   &__heading--small {
     @include heading($heading-font-small-lg, $light-blue-font);
+    display: flex;
+    align-items: center;
+
+    &:after {
+      @include blue-gradient-line(0.625rem)
+    }
 
     &-about {
       &:after {
         @include blue-gradient-line(10px, 30%);
       }
-    }
-    
-    &-workflow {
-      &:after {
-        @include blue-gradient-line(10px, 55%);
-      }
-    }
-
-    &-offer {
-      &:after {
-        @include blue-gradient-line(10px, 35%);
-      }
-    }
-
-    &-brands {
-      &:after {
-        @include blue-gradient-line(10px, 25%);
-      }
-    }
-
-    &-counter {
-      &:after {
-        @include blue-gradient-line(10px, 35%);
-      }
-    }
-
-    &-testimonials {
-      &:after {
-        @include blue-gradient-line(10px, 15%);
-      }
-    }
+    }    
   }
 }
 

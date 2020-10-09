@@ -18,9 +18,11 @@
 
   &__heading--small {
     @include heading($heading-font-small-sm, $light-blue-font);
+    display: flex;
+    align-items: center;
     
     &:after {
-      @include blue-gradient-line(5px, 30%);
+      @include blue-gradient-line(0.625rem);
     }
   }
 }
