@@ -2,12 +2,12 @@
 .section {
   
   &__heading--big {
-    @include heading($heading-font-big, $dark-grey);
+    @include heading($heading-font-big-lg, $dark-grey);
     font-weight: $semi-bold;
   }
 
   &__heading--small {
-    @include heading($heading-font-small, $light-blue-font);
+    @include heading($heading-font-small-lg, $light-blue-font);
 
     &-about {
       &:after {
