@@ -150,9 +150,10 @@ $container-max-widths: (
 );
 
 // media of at least the breakpoint width
-@include media-breakpoint-up(sm) {  
+@include media-breakpoint-up(sm) {
 }
 
 // media of at most the maximum breakpoint width
 @include media-breakpoint-down(sm) {
 } 
+

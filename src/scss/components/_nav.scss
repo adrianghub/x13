@@ -1,20 +1,14 @@
 /* Navigation */
+
 .navbar {
   @include navbar;
 
   &__item {
     padding: 0.5rem 1.5rem;
-    @include add-transitions( color .2s, font-weight .2 );
-
-    &:hover {
-      @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
-      box-shadow: $blue-button-box-shadow;
-      font-weight: normal;
-    }
 
     &:hover .c-link--navbar {
       // override default nav link behaviour
-      color: $white!important;
+      color: $grey!important;
       font-weight: $semi-bold;
     }
   }
@@ -23,8 +17,6 @@
 .c-login { 
   background-color: $light-grey;
   padding: 50px 50px 20px;
-  min-width: 477px;
-  left: -200%; 
 
   &__content {
     background-color: $light-grey;
@@ -33,14 +25,58 @@
   }
 
   &__label {
-    color: $grey;
+    color: #707070;
     font-size: 1rem;
+    font-weight: 600;
+    margin: 0.625rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__input {
     border: none;
     border-radius: 0;
-    margin: 1rem 0 2rem;
+    margin: 20px auto;
   }
 }
+
+// media of at least the breakpoint width
+@include media-breakpoint-up(sm) {
+  .navbar {
+    @include navbar;
+  
+    &__item {
+      padding: 0.5rem 1.5rem;
+      @include add-transitions( color .2s, font-weight .2s );
+  
+      &:hover {
+        @include blue-gradient-button(inline-block, 0, 0.5rem 1.5rem, 100%);
+        box-shadow: $blue-button-box-shadow;
+        font-weight: normal;
+      }
+  
+      &:hover .c-link--navbar {
+        // override default nav link behaviour
+        color: $white!important;
+      }
+    }
+  }
+  
+  .c-login { 
+    min-width: 477px;
+    left: -200%; 
+
+  
+    &__label {
+      display: block;
+      margin: 0;
+    }
+  
+    &__input {
+      margin: 1rem 0 2rem;
+    }
+  }
+}
+
 /* End Navigation */
