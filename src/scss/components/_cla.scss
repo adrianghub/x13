@@ -1,7 +1,7 @@
 /* CLA Bar */
 
 .c-cla {
-  min-height: 300px;
+  min-height: $cla-height-sm;
   color: $white;
   background: $blue-gradient;
   padding: 3rem 0 2rem;
@@ -19,9 +19,15 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .c-cla {
-    min-height: $cla-height;
+    min-height: $cla-height-lg;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .c-cla {
+    min-height: $cla-height-lg;
     &__buttons {
       display: block;
     }

@@ -4,11 +4,9 @@
   margin: 0 auto;
 
   &__caption {
-    max-width: $header-caption-width;
-    max-height: $header-caption-height;
     background-color: $white;
     box-shadow: $suble-box-shadow;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   &__heading--big {
@@ -34,9 +32,12 @@
     position: relative;
   
     &__caption {
+      max-width: $header-caption-width;
+      max-height: $header-caption-height;
       position: absolute;
       bottom: 15%;
       left: 15%;
+      padding: 1rem;
     }
   
     &__heading--big {
