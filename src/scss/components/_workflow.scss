@@ -1,6 +1,48 @@
 /* Section Workflow */
 
-.workflow {
+.c-card {
+  box-shadow: $suble-box-shadow;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+
+  &:hover {
+    box-shadow: $hover-box-shadow;
+  }
+
+  // Left Section 
+
+  &__button {
+    @include accordion-button;
+
+    &--number {
+      color: $light-blue-font;
+      margin: 0 0.625rem;
+    }
+  } 
+
+  &__header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+  }
+  
+  &__body {
+    padding: 1.25rem 0 1.25rem;
+
+    &:after {
+      @include blue-gradient-border;
+    }
+  }
+
+  &__description {
+    padding: 0 1.25rem;
+  }
+
+  // Right Section
+
   &__background {
     min-width: $bg-image-width;
     min-height: $bg-image-height;
@@ -8,50 +50,7 @@
     background-repeat: no-repeat; 
     background-size: contain; 
     background-position: right;
-  }
-
-  &__card, &__card__header {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 1.25rem;
-  }
-
-  &__card {
-    box-shadow: $suble-box-shadow;
-
-    &:hover {
-      box-shadow: $hover-box-shadow;
-    }
-
-    &__body {
-      padding: 1.25rem 0 1.25rem;
-
-      &:after {
-        @include blue-gradient-border;
-      }
-
-      &__description {
-        padding: 0 1.25rem;
-      }
-    }
-
-    &__button {
-      font-size: 1.25rem;
-      font-weight: $semi-bold;
-      // override default button styles 
-      text-align: left!important;
-      outline: none!important;
-      width: 100%!important;
-      color: $dark!important;
-      text-decoration: none!important;
-
-      &--number {
-        color: $light-blue-font;
-        margin: 0 0.625rem;
-      }
-    }
-  }
+  } 
 }
 
 /* End Section Workflow */

@@ -37,7 +37,9 @@
   :-moz-placeholder           {@content}
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
-}
+};
+
+/* Borders */
 
 @mixin blue-gradient-border {
   background: $blue-gradient;
@@ -49,14 +51,22 @@
   width: 100%;
 }
 
-@mixin blue-gradient-line($margin-left, $width: null) {
-  flex-grow: 1;
-  content: "";
-  height: 1px;
-  margin-left: $margin-left;
-  background: $blue-gradient;
-  width: $width;
+@mixin border-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $light-blue;
+  border-bottom-color: $light-blue;
+  z-index: 1;
 }
+
+/* Buttons */
 
 @mixin blue-gradient-button ($display, $margin, $padding, $max-width) {
   background: $blue-gradient;
@@ -78,6 +88,42 @@
   background: $background;
 }
 
+@mixin accordion-button {
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  // override default button styles 
+  color: $dark;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Hover */
+
+@mixin hover-item ($color, $box-shadow: null, $font-weight: null) {
+  color: darken($color, 5%);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: $box-shadow;
+  font-weight: $font-weight;
+}
+
+/* Lines */
+
+@mixin blue-gradient-line($margin-left, $width: null) {
+  flex-grow: 1;
+  content: "";
+  height: 1px;
+  margin-left: $margin-left;
+  background: $blue-gradient;
+  width: $width;
+}
+
+/* Sections */
+
 @mixin navbar {
   font-size: 1.125rem;
   background-color: #fff;
@@ -88,29 +134,8 @@
 @mixin heading ($font-size, $color) {
   font-size: $font-size;
   color: $color;
-}
-
-@mixin border-arrow {
-  display: inline-block;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid $light-blue;
-  border-bottom-color: $light-blue;
-  z-index: 1;
-}
-
-@mixin hover-item ($color, $box-shadow: null, $font-weight: null) {
-    color: darken($color, 5%);
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: $box-shadow;
-    font-weight: $font-weight;
 } 
+
+/* Transitions */
 
 @mixin add_transitions ($transitions...) { transition: $transitions };
