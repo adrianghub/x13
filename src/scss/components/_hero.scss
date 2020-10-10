@@ -1,8 +1,5 @@
 /* Header */
 .hero {
-  max-width: $header-width;
-  margin: 0 auto;
-
   &__caption {
     background-color: $white;
     box-shadow: $suble-box-shadow;
@@ -32,8 +29,6 @@
     position: relative;
   
     &__caption {
-      max-width: $header-caption-width;
-      max-height: $header-caption-height;
       position: absolute;
       bottom: 15%;
       left: 15%;

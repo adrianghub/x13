@@ -80,10 +80,9 @@
 
 @mixin navbar {
   font-size: 1.125rem;
-  min-height: $navbar-height;
   background-color: #fff;
   box-shadow: $suble-box-shadow;
-  padding: 0;
+  padding: 3.125rem;
 }
 
 @mixin heading ($font-size, $color) {
@@ -103,6 +102,7 @@
   border-right: 10px solid transparent;
   border-top: 10px solid $light-blue;
   border-bottom-color: $light-blue;
+  z-index: 1;
 }
 
 @mixin hover-item ($color, $box-shadow: null, $font-weight: null) {

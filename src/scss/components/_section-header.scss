@@ -2,12 +2,12 @@
 .section {
   
   &__heading--big {
-    @include heading($heading-font-big-lg, $dark-grey);
+    @include heading($heading-font-big-sm, $dark-grey);
     font-weight: $semi-bold;
   }
 
   &__heading--small {
-    @include heading($heading-font-small-lg, $light-blue-font);
+    @include heading($heading-font-small-sm, $light-blue-font);
     display: flex;
     align-items: center;
 
@@ -20,6 +20,19 @@
         @include blue-gradient-line(10px, 30%);
       }
     }    
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .section {
+  
+    &__heading--big {
+      @include heading($heading-font-big-lg, $dark-grey);
+    }
+  
+    &__heading--small {
+      @include heading($heading-font-small-lg, $light-blue-font);
+    }
   }
 }
 
