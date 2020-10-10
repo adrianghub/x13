@@ -1,7 +1,6 @@
 /* Section Workflow */
 
 .c-card {
-  box-shadow: $suble-box-shadow;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -23,10 +22,8 @@
   } 
 
   &__header {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 1.25rem;
+    @extend .c-card;
+    box-shadow: $suble-box-shadow;
   }
   
   &__body {
