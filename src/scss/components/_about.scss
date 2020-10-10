@@ -1,11 +1,5 @@
 /* Section About */
 
-.section-about {
-	background-color: $light-grey;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
 .about {
   &__feature {
     background-color: $white;
@@ -36,6 +30,7 @@
     font-size: 1.375rem;
     color: $grey;
     font-weight: $semi-bold;
+    text-align: center;
 
     &--last {
       color: $white;

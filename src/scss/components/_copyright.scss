@@ -1,9 +1,15 @@
 /* Section Copyright */
-.section-copyright {
-  background: $white;
+
+.l-copyright__flex {
+  display: flex;
+  justify-content: center;
+  margin: 0.625rem auto;
 }
 
-.copyright {
-  color: $grey;
+@include media-breakpoint-up(sm) {
+  .l-copyright__flex {
+    display: block;
+  }
 }
+
 /* End Section Copyright */

@@ -1,13 +1,6 @@
 /* Section Workflow */
 
-.section-workflow {
-  background: $white;
-}
-
 .workflow {
-  max-width: $accordion-width;
-  max-height: $accordion-height;
-
   &__background {
     min-width: $bg-image-width;
     min-height: $bg-image-height;

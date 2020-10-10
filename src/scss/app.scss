@@ -28,10 +28,22 @@
 @import 'components/footer';
 @import 'components/copyright';
 
-/* bold items */
+/* Utils */
 
 .bold {
   font-weight: $semi-bold;
+}
+
+.grey-bg {
+  background-color: $light-grey;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.grey-text {
+  color: $grey;
 }
 
 /* ------buttons------ */
