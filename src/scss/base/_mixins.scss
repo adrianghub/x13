@@ -91,13 +91,13 @@
 @mixin accordion-button {
   font-size: 1.25rem;
   font-weight: $semi-bold;
-  // override default button styles 
   color: $dark;
   text-decoration: none;
   background: transparent;
   border: none;
   padding: 1rem;
   outline: none;
+  font-family: inherit;
   cursor: pointer;
 }
 
