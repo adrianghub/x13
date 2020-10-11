@@ -1,17 +1,31 @@
 /* Section Workflow */
 
+.section-workflow {
+  position: relative;
+
+  &--bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: $bg-image-width;
+    min-height: $bg-image-height;
+    background-image: url('../images/design/service-worker.png'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: right;
+  }
+}
+
 .c-card {
-  background-color: transparent;
+  background-color: $white;
   border: none;
   padding: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3.125rem;
   box-shadow: $suble-box-shadow;
 
   &:hover {
     box-shadow: $hover-box-shadow;
   }
-
-  // Left Section 
 
   &__button {
     @include accordion-button;
@@ -41,17 +55,6 @@
     line-height: 1.7rem;
     padding: 0 1.5rem;
   }
-
-  // Right Section
-
-  &__background {
-    min-width: $bg-image-width;
-    min-height: $bg-image-height;
-    background-image: url('../images/design/service-worker.png'); 
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    background-position: right;
-  } 
 }
 
 /* End Section Workflow */
