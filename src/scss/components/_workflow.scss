@@ -5,6 +5,7 @@
   border: none;
   padding: 0;
   margin-bottom: 1.25rem;
+  box-shadow: $suble-box-shadow;
 
   &:hover {
     box-shadow: $hover-box-shadow;
@@ -23,10 +24,10 @@
 
   &__header {
     @extend .c-card;
-    box-shadow: $suble-box-shadow;
   }
   
   &__body {
+    background-color: $white;
     padding: 1.25rem 0 1.25rem;
 
     &:after {
@@ -35,7 +36,10 @@
   }
 
   &__description {
-    padding: 0 1.25rem;
+    color: $darker-grey;
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    padding: 0 1.5rem;
   }
 
   // Right Section
