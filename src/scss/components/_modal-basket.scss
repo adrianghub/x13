@@ -1,14 +1,19 @@
 .c-basket {
   &__title {
     color: $dark;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
   }
 
   &__header {
       border: none;
   }
 
-  &__row {
+  &__image {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  &__body {
     border-bottom: 1px solid $grey;
 
     &:nth-child(odd) {
@@ -23,32 +28,23 @@
   &__footer {
     color: $dark;
     border: none;
-    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+    padding-bottom: 1.25rem;
   }
 
   &__caption {
     position: relative;
 
     &:after {
-      position: absolute;
-      display: block;
-      content: "";
-      min-width: 25%;
-      max-width: 300px;
-      height: 10px;
-      background: $orange-gradient;
-      bottom: -20px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      border-radius: 10px;
+      @include orange-gradient-line;
     }
   } 
 }
 
 .l-basket {
   &__top {
-    margin-top: 2rem;
     color: $grey;
+    font-size: 0.8rem;
     
     &--price {
       text-decoration: line-through;
@@ -57,14 +53,109 @@
   
   &__bottom {
     font-weight: $semi-bold;
+    margin-top: 0.5rem;
   
     &--logo {
       color: $dark;
-      font-size: 1.3rem;
+      font-size: 0.8rem;
     }
     &--price {
       color: $orange;
+      font-size: 1rem;
+    }
+  }
+}
+
+// media queries
+
+@include media-breakpoint-up(sm) {
+  .c-basket {
+    &__title {
       font-size: 1.5rem;
+    }
+
+    &__image {
+      margin: 0;
+    }
+  }
+
+  .l-basket {
+    &__right {
+      padding: 1.5rem 0.5rem 1rem 1rem;
+    }
+    
+    &__bottom {
+      &--logo {
+        font-size: 1rem;
+      }
+      &--price {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .c-basket {
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    &__footer {
+      font-size: 1.875rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .l-basket {
+    &__top {
+      font-size: 1.2rem;
+    }
+    
+    &__bottom {
+      &--logo {
+        font-size: 1.4rem;
+      }
+      &--price {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .c-basket {
+    &__title {
+      font-size: 2.25rem;
+    }
+
+    &__image {
+      max-width: none;
+    }
+    
+    &__footer {
+      font-size: 1.875rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+  
+  .l-basket {
+    &__right {
+      padding: 1.5rem 0.5rem 0 3rem;
+    }
+  
+  
+    &__top {
+      font-size: 1.75rem;
+    }
+    
+    &__bottom {
+      &--logo {
+        font-size: 2.2rem;
+      }
+      &--price {
+        font-size: 3rem;
+      }
     }
   }
 }
