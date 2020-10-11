@@ -13,9 +13,7 @@
   }
 
   &__blue-dot {
-    position: absolute;
-    top: -25%;
-    right: 25%;
+    display: none;
   }
 
   &__caption {
@@ -27,6 +25,17 @@
   &__image {
     margin: 0 auto 1.25rem;
     min-width: $counter-image-width;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .counter {
+      &__blue-dot {
+      display: block;
+      position: absolute;
+      top: -25%;
+      right: 25%;
+    }
   }
 }
 

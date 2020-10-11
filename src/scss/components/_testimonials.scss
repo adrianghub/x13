@@ -8,34 +8,13 @@
     &:hover {
       box-shadow: $hover-box-shadow;
     }
+  }
 
-    &__footer {
-      padding: 0 1rem 0.5rem;
-    }
-
-    &__content {
-      position:relative;
-      color: $darker-grey;
-      margin-left: 1.25rem;
-      padding: 1rem 0 1rem 0.5rem;
-
-      &:before {
-        position: absolute;
-        top: 25%;
-        left: -8%;
-        width: 3.125rem;
-        height: 3.125rem;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        content: url('../images/design/apostrophe.png');
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        background-color: $light-blue-font;
-        box-shadow: $blue-button-box-shadow;
-        color: $white;
-      }
-    }
+  &__content {
+    position:relative;
+    color: $darker-grey;
+    margin-left: 1.25rem;
+    padding: 1rem 0 1rem 0.5rem;
   }
 
   &__about {
@@ -50,6 +29,20 @@
   
     &--title {
       color: $dark-grey;
+    }
+  }
+
+  &__footer {
+    padding: 0 1rem 0.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .testimonials {
+    &__content {
+      &:before {
+        @include blue-dot-apostrophe;
+      }
     }
   }
 }

@@ -101,6 +101,25 @@
   cursor: pointer;
 }
 
+/* Dot */
+
+@mixin blue-dot-apostrophe {
+  position: absolute;
+  top: 25%;
+  left: -8%;
+  width: 3.125rem;
+  height: 3.125rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  content: url('../images/design/apostrophe.png');
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: $light-blue-font;
+  box-shadow: $blue-button-box-shadow;
+  color: $white;
+}
+
 /* Hover */
 
 @mixin hover-item ($color, $box-shadow: null, $font-weight: null) {
