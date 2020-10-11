@@ -5,49 +5,46 @@
 }
 
 .offer {
-  &__list {
-    &__item {
-      flex-basis: 0;
-      flex-grow: 1;
-      text-align: center;
-      border: none;
-      color: $grey;
-      background-color: $light-grey;
-      font-size: 1.875rem;
-      position: relative;
-    
-      &:hover .nav-link {
-        box-shadow: $suble-box-shadow;
-        // override nav hover effect
-        color: $dark!important;
-      }
+  &__item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    border: none;
+    color: $grey;
+    background-color: $light-grey;
+    font-size: 1.875rem;
+    position: relative;
+  
+    &:hover .nav-link {
+      box-shadow: $suble-box-shadow;
+      // override nav hover effect
+      color: $dark!important;
     }
-    &__link {
-      display: flex;
-      align-items: center;
-      color: $grey;
-      font-weight: $semi-bold;
-      padding: 1.25rem;
+  }
 
-      
-      &__image {
-        margin-right: 1.25rem;
-        width: 6.56rem;
-        height: 6.56rem;
-      }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $grey;
+    font-weight: $semi-bold;
+    padding: 1.25rem;
 
-      &.active {
-        color: $dark;
-        background-color: $white;
-        border-bottom: 2px solid $light-blue;
-        box-shadow: $suble-box-shadow;
-
-        .borderArrow {
-          @include border-arrow;
-        }
+    &.active {
+      color: $dark;
+      background-color: $white;
+      border-bottom: 2px solid $light-blue;
+      box-shadow: $suble-box-shadow;
+  
+      .borderArrow {
+        @include border-arrow;
       }
     }
   }
+      
+  &__image {
+    margin-right: 1.25rem;
+  }
+
   &__content {
     background-color: $white;
     color: $grey;
