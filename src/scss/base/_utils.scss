@@ -1,0 +1,101 @@
+/* Utils */
+
+.bold {
+  font-weight: $semi-bold;
+}
+
+.grey-bg {
+  background-color: $light-grey;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.grey-text {
+  color: $grey;
+}
+
+/* Buttons */
+
+.c-btn {
+  box-shadow: $suble-box-shadow;
+  @include add_transitions(color .2s, box-shadow .2s);
+
+  &:hover {
+    @include hover-item($white, $hover-box-shadow);
+  }
+
+  &--form {
+    @include blue-gradient-button(
+      block, 
+      3rem auto 1rem, 
+      15px 35px, 70%
+    );
+    box-shadow: $blue-button-box-shadow;
+  }
+
+
+  &--phone {
+    @include cla-button(
+      $white, 
+      1.5rem, 
+      0.5rem 1.25rem, 
+      $orange-gradient, 
+    );
+  }
+
+  &--mail {
+    @include cla-button(
+      $grey, 
+      1.125rem, 
+      0.7rem 1.25rem, 
+      $white, 
+    );
+    margin-top: 20px;
+
+    &:hover {
+      @include hover-item($grey, $hover-box-shadow);
+    }
+  }
+
+  &--offer {
+    @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
+    box-shadow: $blue-button-box-shadow;
+  }
+}
+
+/* ------links------ */
+
+.c-link {
+  color: $grey;
+  margin-left: 0.625rem;
+  @include add_transitions(color .3s);
+
+  &--navbar {
+    margin: 0;
+
+    &:before {
+      display: block;
+      content: attr(title);
+      font-weight: $semi-bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  &--nav {
+    font-size: 1.125rem;
+  }
+
+  &--contact {
+    font-size: 1.25rem;
+    margin-left: 0.625rem;
+    font-weight: $semi-bold;
+  }
+
+  &:hover {
+    @include hover-item($grey, null, $semi-bold);
+  }
+}
