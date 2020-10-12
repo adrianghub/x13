@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import $ from 'jquery';
 
 import 'bootstrap/js/src/tab';

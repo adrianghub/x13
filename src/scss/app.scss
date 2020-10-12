@@ -1,5 +1,5 @@
 /* Bootstrap */
-@import 'bootstrap/bootstrap.scss';
+@import 'bootstrap/bootstrap';
 
 /* Owl Carousel */
 @import '~owl.carousel/dist/assets/owl.carousel.css';
@@ -45,7 +45,7 @@
   color: $grey;
 }
 
-/* ------buttons------ */
+/* Buttons */
 .c-btn {
   box-shadow: $suble-box-shadow;
   @include add_transitions(color .2s, box-shadow .2s);
@@ -160,12 +160,4 @@ $container-max-widths: (
   lg: 960px,
   xl: 1920px
 );
-
-// media of at least the breakpoint width
-@include media-breakpoint-up(sm) {
-}
-
-// media of at most the maximum breakpoint width
-@include media-breakpoint-down(sm) {
-} 
 
