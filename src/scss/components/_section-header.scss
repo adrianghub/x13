@@ -12,12 +12,12 @@
     align-items: center;
 
     &:after {
-      @include blue-gradient-line(0.625rem, 15%)
+      @include blue-gradient-line(0.625rem)
     }
 
     &-about {
       &:after {
-        @include blue-gradient-line(0.625rem, 30%);
+        @include blue-gradient-line(0.625rem, 15%);
         flex-grow: 0;
       }
     }    

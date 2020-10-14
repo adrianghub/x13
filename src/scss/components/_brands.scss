@@ -7,15 +7,7 @@
 
 @include media-breakpoint-up(sm) {
   .single-carousel {
-    margin-right: 50px;
-    &__image {
-      max-width: 70%;
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .single-carousel {
+    margin-right: 3.125rem;
     &__image {
       max-width: 100%;
     }
