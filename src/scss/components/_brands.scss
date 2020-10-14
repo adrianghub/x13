@@ -1,0 +1,23 @@
+.single-carousel {
+  margin-right: 0px;
+  &__image {
+    max-width: 30%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .single-carousel {
+    margin-right: 50px;
+    &__image {
+      max-width: 70%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .single-carousel {
+    &__image {
+      max-width: 100%;
+    }
+  }
+}
