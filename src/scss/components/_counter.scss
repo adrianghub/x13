@@ -1,4 +1,7 @@
 /* Section Counter */
+
+$counter-image-width: 80px;
+
 .counter {
 	display: flex;
 	justify-content: center;
@@ -8,7 +11,7 @@
     text-align: center;
     color: $light-blue-font;
     font-size: 4.375rem;
-    font-weight: $semi-bold;
+    font-weight: 600;
     position: relative;
   }
 

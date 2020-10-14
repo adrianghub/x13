@@ -8,7 +8,7 @@
 
   &__heading--big {
     @include heading($heading-font-big-sm, $dark);
-    font-weight: $semi-bold;
+    font-weight: 600;
   }
 
   &__heading--small {

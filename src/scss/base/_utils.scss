@@ -1,7 +1,7 @@
 /* Utils */
 
 .bold {
-  font-weight: $semi-bold;
+  font-weight: 600;
 }
 
 .grey-bg {
@@ -78,7 +78,7 @@
     &:before {
       display: block;
       content: attr(title);
-      font-weight: $semi-bold;
+      font-weight: 600;
       height: 0;
       overflow: hidden;
       visibility: hidden;
@@ -92,10 +92,10 @@
   &--contact {
     font-size: 1.25rem;
     margin-left: 0.625rem;
-    font-weight: $semi-bold;
+    font-weight: 600;
   }
 
   &:hover {
-    @include hover-item($grey, null, $semi-bold);
+    @include hover-item($grey, null, 600);
   }
 }

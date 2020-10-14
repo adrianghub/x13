@@ -72,7 +72,7 @@
   background: $blue-gradient;
   color: $white;
   padding: $padding;
-  font-weight: $semi-bold;
+  font-weight: 600;
   max-width: $max-width;
   display: $display;
   text-align: center;  
@@ -90,7 +90,7 @@
 
 @mixin accordion-button {
   font-size: 1.25rem;
-  font-weight: $semi-bold;
+  font-weight: 600;
   color: $dark;
   text-decoration: none;
   background: transparent;

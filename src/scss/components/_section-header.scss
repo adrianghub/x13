@@ -3,7 +3,7 @@
   
   &__heading--big {
     @include heading($heading-font-big-sm, $dark-grey);
-    font-weight: $semi-bold;
+    font-weight: 600;
   }
 
   &__heading--small {
@@ -12,12 +12,13 @@
     align-items: center;
 
     &:after {
-      @include blue-gradient-line(0.625rem)
+      @include blue-gradient-line(0.625rem, 15%)
     }
 
     &-about {
       &:after {
-        @include blue-gradient-line(10px, 30%);
+        @include blue-gradient-line(0.625rem, 30%);
+        flex-grow: 0;
       }
     }    
   }

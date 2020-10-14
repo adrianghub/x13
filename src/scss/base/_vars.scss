@@ -6,16 +6,6 @@
 /* Typography */
 
 $default-font-size: 100%; /* 100% = 16px  */
-$semi-bold: 600;
-
-/* Breakpoints */
-
-$bps: (
-  xs: 576px,
-  sm: 768px,
-  md: 992px,
-  lg: 1200px
-);
 
 /* Colour palette */
 
@@ -55,12 +45,3 @@ $heading-font-small-lg: 18px;
 
 $heading-font-big-sm: 48px;
 $heading-font-small-sm: 14px;
-
-/* Workflow */
-
-$bg-image-width: 750px;
-$bg-image-height: 500px;
-
-/* Counter */
-
-$counter-image-width: 80px;

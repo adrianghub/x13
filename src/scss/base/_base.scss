@@ -1,0 +1,12 @@
+/* Base */
+
+html {
+  font-size: $default-font-size;
+}
+
+body {
+  background: $body-background-color;
+  color: $foreground-color;
+  font-family: 'Poppins', arial, serif;
+  overflow-x: hidden;
+}

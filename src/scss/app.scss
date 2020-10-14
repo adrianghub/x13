@@ -16,6 +16,9 @@
 /* Utils */
 @import 'base/utils';
 
+/* Base styles */
+@import 'base/base';
+
 /* Components */
 @import 'components/nav';
 @import 'components/hero';
@@ -30,37 +33,4 @@
 @import 'components/footer';
 @import 'components/copyright';
 
-
-/* Base */
-
-html {
-  font-size: $default-font-size;
-}
-
-body {
-  background: $body-background-color;
-  color: $foreground-color;
-  font-family: 'Poppins', arial, serif;
-  overflow-x: hidden;
-}
-
-/* Media Queries */
-
-
-// define min-width breakpoint at which layout changes
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
-
-// define the maximum width for different screen sizes
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1920px
-);
 

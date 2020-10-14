@@ -9,7 +9,7 @@
     &:hover .c-link--navbar {
       // override default nav link behaviour
       color: $grey!important;
-      font-weight: $semi-bold;
+      font-weight: 600;
     }
 
     &--login {
