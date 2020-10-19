@@ -12,18 +12,20 @@ import '../scss/app.scss';
 $(function() {
   $('.brand-carousel').owlCarousel({
     loop: true,
-    margin: 10,
     autoplay: true,
     responsiveClass: true,
     responsive: {
       0: {
         items: 3,
+        margin: 20,
       },
       600: {
         items: 3,
+        margin: 30,
       },
       1000: {
         items: 5,
+        margin: 50,
       },
     },
   });
