@@ -68,17 +68,14 @@
 
 /* Buttons */
 
-@mixin blue-gradient-button ($display, $margin, $padding, $max-width) {
-  background: $blue-gradient;
-  color: $white;
-  padding: $padding;
-  font-weight: 600;
-  max-width: $max-width;
-  display: $display;
-  text-align: center;  
+@mixin button ($background: $blue-gradient, $color: $white, $margin, $padding, $border-radius, $display: null, $max-width: null) {
+  background: $background;
+  color: $color;
   margin: $margin;
-  border-radius: 25px;
-  box-shadow: $suble-box-shadow;
+  padding: $padding;
+  border-radius: $border-radius;
+  display: $display;
+  max-width: $max-width;
 }
 
 @mixin cla-button ($color, $font-size, $padding, $background) {

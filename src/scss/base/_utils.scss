@@ -19,6 +19,8 @@
 /* Buttons */
 
 .c-btn {
+  font-weight: 600;
+  text-align: center;
   box-shadow: $suble-box-shadow;
   @include add_transitions(color .2s, box-shadow .2s);
 
@@ -27,32 +29,41 @@
   }
 
   &--form {
-    @include blue-gradient-button(
-      block, 
+    @include button(
+      $blue-gradient,
+      $white,
       3rem auto 1rem, 
-      15px 35px, 70%
+      15px 35px, 
+      25px,
+      block,
+      70%,
     );
     box-shadow: $blue-button-box-shadow;
   }
 
 
   &--phone {
-    @include cla-button(
-      $white, 
-      1.5rem, 
-      0.5rem 1.25rem, 
+    @include button(
       $orange-gradient, 
+      $white,
+      0, 
+      0.5rem 1.25rem, 
+      inline-block,
     );
+    border-radius: 0;
+    font-size: 1.5rem
   }
 
   &--mail {
-    @include cla-button(
-      $grey, 
-      1.125rem, 
-      0.7rem 1.25rem, 
+    @include button(
       $white, 
+      $grey, 
+      1.25rem 0 0,
+      0.7rem 1.25rem,
+      inline-block,
     );
-    margin-top: 20px;
+    border-radius: 0;
+    font-size: 1.125rem;
 
     &:hover {
       @include hover-item($grey, $hover-box-shadow);
@@ -60,7 +71,15 @@
   }
 
   &--offer {
-    @include blue-gradient-button(block, 20px auto, 10px 15px, 180px);
+    @include button(
+      $blue-gradient,
+      $white,
+      1.25rem auto, 
+      0.625rem 15px, 
+      25px,
+      block,
+      180px,
+    );
     box-shadow: $blue-button-box-shadow;
   }
 }
